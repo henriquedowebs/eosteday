@@ -1,0 +1,287 @@
+/**
+ * Oeste Day - Flat Design System (v2.0)
+ * Strict Flat Aesthetic: 2D, No Shadows, No Gradients, 2px Radius, 5 Solid Colors, 150ms Transitions
+ */
+
+:root {
+  /* Limited High-Saturation Flat Palette (5 Solid Colors) */
+  --color-navy: #0B2545;        /* Primária Escura / Tipografia Forte */
+  --color-blue: #0066CC;        /* Primária Vibrante / Destaque de Ação */
+  --color-green: #00A86B;       /* Verde Cirúrgico / Segurança & CTA */
+  --color-orange: #FF6600;      /* Laranja Vibrante / Acento & Destaque */
+  --color-canvas: #F4F6F9;      /* Fundo Neutro Limpo */
+  --color-white: #FFFFFF;       /* Branco Sólido */
+  --color-border: #CBD5E1;      /* Linha Sólida Nítida */
+  --color-text-muted: #475569;  /* Texto Secundário */
+  
+  /* Technical Flat Rules */
+  --shadow: none !important;
+  --border-radius: 2px;
+  --transition: all 150ms ease;
+}
+
+* {
+  box-shadow: none !important;
+  text-shadow: none !important;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background-color: var(--color-canvas);
+  color: var(--color-navy);
+  margin: 0;
+  padding: 0;
+}
+
+/* Flat Cards & Surfaces */
+.flat-card {
+  background-color: var(--color-white);
+  border: 2px solid var(--color-border);
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+.flat-card:hover {
+  border-color: var(--color-blue);
+}
+
+.flat-card-featured {
+  background-color: var(--color-white);
+  border: 3px solid var(--color-orange);
+  border-radius: var(--border-radius);
+  position: relative;
+}
+
+/* Flat Buttons */
+.btn-flat-primary {
+  background-color: var(--color-green);
+  color: #ffffff;
+  border: 2px solid var(--color-green);
+  border-radius: var(--border-radius);
+  font-weight: 700;
+  transition: var(--transition);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.btn-flat-primary:hover {
+  background-color: #008f5a;
+  border-color: #008f5a;
+}
+
+.btn-flat-blue {
+  background-color: var(--color-blue);
+  color: #ffffff;
+  border: 2px solid var(--color-blue);
+  border-radius: var(--border-radius);
+  font-weight: 700;
+  transition: var(--transition);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.btn-flat-blue:hover {
+  background-color: #0052a3;
+  border-color: #0052a3;
+}
+
+.btn-flat-outline {
+  background-color: transparent;
+  color: var(--color-navy);
+  border: 2px solid var(--color-navy);
+  border-radius: var(--border-radius);
+  font-weight: 700;
+  transition: var(--transition);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.btn-flat-outline:hover {
+  background-color: var(--color-navy);
+  color: #ffffff;
+}
+
+/* Flat Badges */
+.flat-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 4px 10px;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+  background-color: var(--color-white);
+}
+.flat-badge-blue {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 4px 10px;
+  border-radius: var(--border-radius);
+  border: 1.5px solid var(--color-blue);
+  background-color: #EFF6FF;
+  color: var(--color-blue);
+}
+.flat-badge-emerald {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 4px 10px;
+  border-radius: var(--border-radius);
+  border: 1.5px solid var(--color-green);
+  background-color: #ECFDF5;
+  color: var(--color-green);
+}
+.flat-badge-orange {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 4px 10px;
+  border-radius: var(--border-radius);
+  border: 1.5px solid var(--color-orange);
+  background-color: #FFF7ED;
+  color: var(--color-orange);
+}
+.flat-badge-navy {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 4px 10px;
+  border-radius: var(--border-radius);
+  border: 1.5px solid var(--color-navy);
+  background-color: #F1F5F9;
+  color: var(--color-navy);
+}
+
+/* Flat Navigation Dropdown */
+.nav-item.dropdown {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+.nav-item.dropdown > a {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+.nav-item.dropdown > a:hover {
+  background-color: #E2E8F0;
+  color: var(--color-blue);
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--color-white);
+  border: 2px solid var(--color-navy);
+  border-radius: var(--border-radius);
+  min-width: 270px;
+  list-style: none;
+  padding: 4px 0;
+  margin-top: 0;
+  z-index: 9999;
+}
+.dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 0;
+  right: 0;
+  height: 12px;
+}
+.nav-item.dropdown:hover .dropdown-menu,
+.nav-item.dropdown:focus-within .dropdown-menu,
+.nav-item.dropdown.is-open .dropdown-menu {
+  display: block;
+}
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-navy);
+  border-bottom: 1px solid #E2E8F0;
+  transition: var(--transition);
+}
+.dropdown-menu li:last-child a {
+  border-bottom: none;
+}
+.dropdown-menu li a:hover {
+  background: var(--color-blue);
+  color: #ffffff;
+}
+
+/* Flat Form Controls */
+.flat-input, .flat-select, .flat-textarea {
+  width: 100%;
+  background-color: var(--color-white);
+  border: 2px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-navy);
+  outline: none;
+  transition: var(--transition);
+}
+.flat-input:focus, .flat-select:focus, .flat-textarea:focus {
+  border-color: var(--color-blue);
+}
+
+/* Flat Accordion */
+.faq-flat-item {
+  border: 2px solid var(--color-border);
+  background-color: var(--color-white);
+  border-radius: var(--border-radius);
+  margin-bottom: 12px;
+  transition: var(--transition);
+}
+.faq-flat-item:hover {
+  border-color: var(--color-blue);
+}
+.faq-flat-header {
+  padding: 18px 20px;
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--color-navy);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+}
+.faq-flat-body {
+  padding: 0 20px 18px 20px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+}

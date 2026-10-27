@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO & Open Graph Meta Tags -->
+  <title>Oeste Day — Hospital Dia Especializado em Cirurgia Plástica | RJ</title>
+  <meta name="description" content="Centro cirúrgico de ponta no Rio de Janeiro dedicado exclusivamente a cirurgias plásticas eletivas. Conforto, cirurgiões membros da SBCP e Cirurgia Programada.">
+  <meta name="keywords" content="hospital dia, cirurgia plastica rj, lipoescultura rio de janeiro, mastopexia com protese, lipoabdominoplastia, jacarepagua, cirurgia programada">
+  <meta property="og:title" content="Oeste Day — Hospital Dia de Cirurgia Plástica no RJ">
+  <meta property="og:description" content="2.000 m² de infraestrutura cirúrgica eletiva em Jacarepaguá. Mais segurança, risco mínimo de infecção e recuperação no mesmo dia.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Design System Flat Design -->
+  <link rel="stylesheet" href="flat-style.css">
+</head>
+<body class="antialiased">
+
+  <!-- ========================================================================
+       1. NAVBAR (Flat, Sem Sombras, Ícones SVG, Dropdown Funcional)
+       ======================================================================== -->
+  <header class="sticky top-0 z-50 bg-white border-b-2 border-[#0B2545]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo Branding -->
+      <a href="index.html" class="flex items-center gap-3 cursor-pointer group">
+        <div class="w-11 h-11 bg-[#0066CC] border-2 border-[#0B2545] flex items-center justify-center text-white font-extrabold text-lg rounded-[2px] transition-transform duration-150 group-hover:bg-[#00A86B]">
+          OD
+        </div>
+        <div>
+          <span class="block text-xl font-extrabold tracking-tight text-[#0B2545] leading-none">Oeste Day</span>
+          <span class="block text-[11px] font-bold uppercase tracking-wider text-[#0066CC] mt-1">Hospital Dia RJ</span>
+        </div>
+      </a>
+
+      <!-- Menu de Navegação Central -->
+      <nav aria-label="Navegação Principal" class="hidden md:flex items-center gap-6">
+        <a href="index.html" class="text-sm font-bold text-[#0066CC] border-b-2 border-[#0066CC] pb-1 cursor-pointer">Início</a>
+        
+        <!-- Dropdown Procedimentos -->
+        <div class="nav-item dropdown">
+          <a href="javascript:void(0)" class="dropdown-trigger text-sm font-bold text-[#0B2545] hover:text-[#0066CC] cursor-pointer" role="button" aria-haspopup="true" aria-expanded="false" id="menu-procedimentos">
+            <span>Procedimentos</span>
+            <!-- SVG Chevron Down -->
+            <svg class="w-4 h-4 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="menu-procedimentos">
+            <li><a href="lipoescultura.html">Lipoescultura / Lipo 360</a></li>
+            <li><a href="mastopexia-com-protese.html">Mastopexia com Prótese</a></li>
+            <li><a href="lipoabdominoplastia.html">Lipoabdominoplastia</a></li>
+            <li><a href="mastopexia-sem-protese.html">Mastopexia sem Prótese</a></li>
+          </ul>
+        </div>
+
+        <a href="sobre.html" class="text-sm font-bold text-[#0B2545] hover:text-[#0066CC] transition-colors cursor-pointer">Sobre Nós</a>
+        <a href="faq.html" class="text-sm font-bold text-[#0B2545] hover:text-[#0066CC] transition-colors cursor-pointer">FAQ</a>
+        <a href="contato.html" class="text-sm font-bold text-[#0B2545] hover:text-[#0066CC] transition-colors cursor-pointer">Contato</a>
+      </nav>
+
+      <!-- CTA Rápido Navbar -->
+      <div class="flex items-center gap-3">
+        <a href="contato.html" class="btn-flat-primary px-5 py-2.5 text-sm uppercase tracking-wider">
+          <!-- SVG Calendar -->
+          <svg class="w-4 h-4 stroke-[2]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          <span>Agendar Avaliação</span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- ========================================================================
+         2. HERO SECTION (Impactante, 2 Botões, Composição Geométrica 2D Flat)
+         ======================================================================== -->
+    <section class="py-16 lg:py-24 bg-white border-b-2 border-[#CBD5E1]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Coluna Esquerda: Textos & Ações -->
+          <div class="lg:col-span-7">
+            <div class="flat-badge text-[#0066CC] border-[#0066CC] bg-[#F4F6F9] mb-6">
+              <!-- SVG Hospital Icon -->
+              <svg class="w-4 h-4 stroke-[2]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+              <span>Hospital Dia Especializado em Cirurgia Plástica • Jacarepaguá, RJ</span>
+            </div>
+
+            <h1 class="text-4xl sm:text-5xl lg:text-5xl font-extrabold text-[#0B2545] tracking-tight leading-[1.15] mb-6">
+              Realize a cirurgia plástica dos seus sonhos com a segurança de um <span class="text-[#0066CC] underline decoration-4 decoration-[#FF6600]">hospital de ponta</span>.
+            </h1>
+
+            <p class="text-lg text-[#475569] leading-relaxed mb-8 max-w-2xl font-medium">
+              Mais de 2.000 m² de infraestrutura cirúrgica dedicada exclusivamente a procedimentos eletivos. Cirurgiões com RQE ativo e membros da SBCP, com planos de cirurgia programada e parcelamento facilitado em até 18x.
+            </p>
+
+            <div class="flex flex-wrap items-center gap-4 mb-10">
+              <a href="contato.html" class="btn-flat-primary px-8 py-4 text-base">
+                <span>Agendar Minha Avaliação</span>
+                <!-- SVG Arrow Right -->
+                <svg class="w-5 h-5 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+              <a href="#procedimentos-section" class="btn-flat-outline px-8 py-4 text-base">
+                <span>Conhecer Procedimentos</span>
+              </a>
+            </div>
+
+            <!-- Badges Flat de Confiança -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-6 border-t-2 border-[#E2E8F0]">
+              <div class="flex items-center gap-2">
+                <div class="w-6 h-6 bg-[#00A86B] text-white flex items-center justify-center rounded-[2px] shrink-0 font-bold text-xs">
+                  <svg class="w-4 h-4 stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <span class="text-xs font-bold text-[#0B2545]">Livre de Infecções</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="w-6 h-6 bg-[#0066CC] text-white flex items-center justify-center rounded-[2px] shrink-0 font-bold text-xs">
+                  <svg class="w-4 h-4 stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <span class="text-xs font-bold text-[#0B2545]">Membros da SBCP</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="w-6 h-6 bg-[#FF6600] text-white flex items-center justify-center rounded-[2px] shrink-0 font-bold text-xs">
+                  <svg class="w-4 h-4 stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <span class="text-xs font-bold text-[#0B2545]">Em até 18x no Cartão</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coluna Direita: Módulo Fotográfico / Carrossel com Legenda Descritiva -->
+          <div class="lg:col-span-5 flex justify-center" data-photo-gallery>
+            <div class="w-full max-w-lg bg-white border-2 border-[#0B2545] p-4 sm:p-5 rounded-[2px] relative">
+              
+              <!-- Selo Topo Direito -->
+              <div class="absolute -top-3.5 right-4 bg-[#FF6600] text-white border-2 border-[#0B2545] px-3 py-0.5 font-extrabold text-[11px] uppercase tracking-wider rounded-[2px] z-10" data-img-badge>
+                Complexo Hospitalar • 2.000 m²
+              </div>
+
+              <!-- Viewport da Imagem Principal -->
+              <div class="relative overflow-hidden border-2 border-[#0B2545] rounded-[2px] bg-[#F4F6F9] aspect-[4/3] flex items-center justify-center group">
+                <img 
+                  data-main-img 
+                  src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80" 
+                  alt="Centro Cirúrgico Oeste Day - Hospital Dia RJ" 
+                  class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=800&q=80';"
+                />
+                
+                <!-- Botões de Navegação Flutuantes -->
+                <button 
+                  type="button" 
+                  data-prev-btn 
+                  class="absolute left-2.5 top-1/2 -translate-y-1/2 w-9 h-9 bg-white/90 border-2 border-[#0B2545] flex items-center justify-center text-[#0B2545] hover:bg-[#0066CC] hover:text-white transition-colors cursor-pointer rounded-[2px]"
+                  aria-label="Foto anterior"
+                >
+                  <svg class="w-4 h-4 stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+                </button>
+                <button 
+                  type="button" 
+                  data-next-btn 
+                  class="absolute right-2.5 top-1/2 -translate-y-1/2 w-9 h-9 bg-white/90 border-2 border-[#0B2545] flex items-center justify-center text-[#0B2545] hover:bg-[#0066CC] hover:text-white transition-colors cursor-pointer rounded-[2px]"
+                  aria-label="Próxima foto"
+                >
+                  <svg class="w-4 h-4 stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                </button>
+              </div>
+
+              <!-- Barra de Legenda Descritiva da Imagem -->
+              <div class="mt-3.5 p-3 bg-[#F4F6F9] border-2 border-[#CBD5E1] rounded-[2px]">
+                <div class="flex items-center justify-between text-xs font-extrabold text-[#0B2545] uppercase tracking-wider mb-1">
+                  <span data-img-title>Centro Cirúrgico de Alta Tecnologia</span>
+                  <span class="text-[#00A86B] flex items-center gap-1 font-bold">
+                    <span class="w-2 h-2 rounded-full bg-[#00A86B]"></span> 100% Eletivo
+                  </span>
+                </div>
+                <p data-img-desc class="text-xs text-[#475569] font-medium leading-relaxed">
+                  Salas cirúrgicas com fluxo asséptico rigoroso e leitos de recuperação pós-anestésica individualizados.
+                </p>
+              </div>
+
+              <!-- Grade de Miniaturas Navegáveis -->
+              <div class="grid grid-cols-4 gap-2 mt-3">
+                <button 
+                  type="button" 
+                  data-thumb-btn 
+                  data-img-src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80"
+                  data-title="Centro Cirúrgico de Alta Tecnologia"
+                  data-desc="Salas cirúrgicas com fluxo asséptico rigoroso e leitos de recuperação pós-anestésica individualizados."
+                  data-badge="Complexo Hospitalar • 2.000 m²"
+                  class="h-14 border-2 border-[#0066CC] ring-2 ring-[#0066CC] overflow-hidden rounded-[2px] cursor-pointer transition-all bg-[#CBD5E1]"
+                  aria-label="Ver Centro Cirúrgico"
+                >
+                  <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=200&q=70" alt="Centro Cirúrgico" class="w-full h-full object-cover"/>
+                </button>
+
+                <button 
+                  type="button" 
+                  data-thumb-btn 
+                  data-img-src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=800&q=80"
+                  data-title="Fachada & Complexo Hospitalar"
+                  data-desc="Estrutura de 2.000 m² em Jacarepaguá com estacionamento e acesso facilitado por vias expressas."
+                  data-badge="Jacarepaguá • Rio de Janeiro"
+                  class="h-14 border-2 border-[#CBD5E1] opacity-60 hover:opacity-100 overflow-hidden rounded-[2px] cursor-pointer transition-all bg-[#CBD5E1]"
+                  aria-label="Ver Fachada"
+                >
+                  <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=200&q=70" alt="Fachada Hospitalar" class="w-full h-full object-cover"/>
+                </button>
+
+                <button 
+                  type="button" 
+                  data-thumb-btn 
+                  data-img-src="https://images.unsplash.com/photo-1512678080530-7760d81faba6?auto=format&fit=crop&w=800&q=80"
+                  data-title="Unidade de Recuperação (URPA)"
+                  data-desc="Apartamentos e leitos privativos equipados para alta assistida no mesmo dia com total acolhimento."
+                  data-badge="Recuperação Confortável"
+                  class="h-14 border-2 border-[#CBD5E1] opacity-60 hover:opacity-100 overflow-hidden rounded-[2px] cursor-pointer transition-all bg-[#CBD5E1]"
+                  aria-label="Ver Recuperação URPA"
+                >
+                  <img src="https://images.unsplash.com/photo-1512678080530-7760d81faba6?auto=format&fit=crop&w=200&q=70" alt="Recuperação URPA" class="w-full h-full object-cover"/>
+                </button>
+
+                <button 
+                  type="button" 
+                  data-thumb-btn 
+                  data-img-src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80"
+                  data-title="Recepção & Concierge Dedicado"
+                  data-desc="Ambiente acolhedor e exclusivo para atendimento pontual de pacientes e seus acompanhantes."
+                  data-badge="Atendimento Humanizado"
+                  class="h-14 border-2 border-[#CBD5E1] opacity-60 hover:opacity-100 overflow-hidden rounded-[2px] cursor-pointer transition-all bg-[#CBD5E1]"
+                  aria-label="Ver Recepção"
+                >
+                  <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=200&q=70" alt="Recepção" class="w-full h-full object-cover"/>
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         3. FEATURES / DIFERENCIAIS (3 Cards com Ícones SVG Inline)
+         ======================================================================== -->
+    <section class="py-16 lg:py-20 bg-[#F4F6F9] border-b-2 border-[#CBD5E1]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <div class="flat-badge text-[#0066CC] border-[#0066CC] mb-3">O Padrão Ouro em Procedimentos Eletivos</div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#0B2545] tracking-tight">
+            Por que o modelo Hospital Dia é a escolha mais segura?
+          </h2>
+          <p class="text-base text-[#475569] font-medium mt-3">
+            Estrutura desenhada para maximizar a segurança médica, eliminar filas de espera hospitalar e proporcionar um pós-operatório acolhedor.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Card 1 -->
+          <div class="flat-card p-8 flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 bg-[#0066CC] text-white flex items-center justify-center rounded-[2px] border-2 border-[#0B2545] mb-6">
+                <!-- SVG Shield Check -->
+                <svg class="w-8 h-8 stroke-[2]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+              </div>
+              <h3 class="text-xl font-bold text-[#0B2545] mb-3">Risco Mínimo de Infecção</h3>
+              <p class="text-[#475569] text-sm leading-relaxed font-medium">
+                Diferente de hospitais gerais, não realizamos atendimento de emergência nem internamos doentes infectocontagiosos. Nosso centro cirúrgico atende unicamente cirurgias eletivas planejadas.
+              </p>
+            </div>
+            <div class="pt-6 mt-6 border-t-2 border-[#E2E8F0] flex items-center gap-2 text-xs font-bold text-[#0066CC]">
+              <span>Ambiente 100% Controlado</span>
+              <svg class="w-4 h-4 stroke-[2]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="flat-card p-8 flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 bg-[#00A86B] text-white flex items-center justify-center rounded-[2px] border-2 border-[#0B2545] mb-6">
+                <!-- SVG Award / Badge -->
+                <svg class="w-8 h-8 stroke-[2]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+              </div>
+              <h3 class="text-xl font-bold text-[#0B2545] mb-3">Cirurgiões Titulares SBCP</h3>
+              <p class="text-[#475569] text-sm leading-relaxed font-medium">
+                Todo o corpo clínico parceiro possui Registro de Qualificação de Especialista (RQE) ativo e título da Sociedade Brasileira de Cirurgia Plástica, garantindo rigor técnico e ético.
+              </p>
+            </div>
+            <div class="pt-6 mt-6 border-t-2 border-[#E2E8F0] flex items-center gap-2 text-xs font-bold text-[#00A86B]">
+              <span>RQE & CFM nº 1.974/11</span>
+              <svg class="w-4 h-4 stroke-[2]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="flat-card p-8 flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 bg-[#FF6600] text-white flex items-center justify-center rounded-[2px] border-2 border-[#0B2545] mb-6">
+                <!-- SVG Heart Pulse / Home -->
+                <svg class="w-8 h-8 stroke-[2]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+              </div>
+              <h3 class="text-xl font-bold text-[#0B2545] mb-3">Alta no Mesmo Dia com Conforto</h3>
+              <p class="text-[#475569] text-sm leading-relaxed font-medium">
+                Recuperação monitorada na Unidade de Recuperação Pós-Anestésica (URPA) com alta assistida para retorno tranquilo ao lar, reduzindo o estresse e os custos de internações prolongadas.
+              </p>
+            </div>
+            <div class="pt-6 mt-6 border-t-2 border-[#E2E8F0] flex items-center gap-2 text-xs font-bold text-[#FF6600]">
+              <span>Despertar Suave & Monitorado</span>
+              <svg class="w-4 h-4 stroke-[2]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         4. PROCEDIMENTOS CORE EM DESTAQUE (Grid 4 Colunas Flat)
+         ======================================================================== -->
+    <section class="py-16 lg:py-20 bg-white border-b-2 border-[#CBD5E1]" id="procedimentos-section">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+          <div>
+            <div class="flat-badge text-[#0066CC] border-[#0066CC] mb-2">Especialidades Core</div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-[#0B2545] tracking-tight">
+              Procedimentos Cirúrgicos Mais Procurados
+            </h2>
+          </div>
+          <a href="contato.html" class="btn-flat-outline px-6 py-2.5 text-sm shrink-0">
+            <span>Dúvidas sobre Cirurgias? Fale Conosco</span>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Procedimento 1 -->
+          <div class="flat-card p-6 flex flex-col justify-between group">
+            <div>
+              <div class="h-32 bg-[#F4F6F9] border-2 border-[#CBD5E1] flex flex-col items-center justify-center p-4 mb-5 rounded-[2px] text-center">
+                <span class="text-xs font-extrabold uppercase tracking-wider text-[#0066CC]">Contorno Corporal</span>
+                <span class="text-sm font-bold text-[#0B2545] mt-1">Lipo 360 & Glúteos</span>
+              </div>
+              <h3 class="text-lg font-bold text-[#0B2545] mb-2 group-hover:text-[#0066CC] transition-colors">Lipoescultura</h3>
+              <p class="text-xs text-[#475569] leading-relaxed font-medium mb-4">
+                Remoção da gordura localizada resistente e enxertia estratégica para modelar cintura e glúteos com harmonia natural.
+              </p>
+            </div>
+            <a href="lipoescultura.html" class="btn-flat-blue w-full py-2.5 text-xs uppercase tracking-wider">
+              <span>Ver Detalhes</span>
+              <svg class="w-3.5 h-3.5 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+          </div>
+
+          <!-- Procedimento 2 -->
+          <div class="flat-card p-6 flex flex-col justify-between group">
+            <div>
+              <div class="h-32 bg-[#F4F6F9] border-2 border-[#CBD5E1] flex flex-col items-center justify-center p-4 mb-5 rounded-[2px] text-center">
+                <span class="text-xs font-extrabold uppercase tracking-wider text-[#00A86B]">Cirurgia Mamária</span>
+                <span class="text-sm font-bold text-[#0B2545] mt-1">Prótese de Silicone</span>
+              </div>
+              <h3 class="text-lg font-bold text-[#0B2545] mb-2 group-hover:text-[#0066CC] transition-colors">Mastopexia com Prótese</h3>
+              <p class="text-xs text-[#475569] leading-relaxed font-medium mb-4">
+                Lifting mamário para elevar os seios caídos e preenchimento do colo com próteses certificadas pela Anvisa.
+              </p>
+            </div>
+            <a href="mastopexia-com-protese.html" class="btn-flat-blue w-full py-2.5 text-xs uppercase tracking-wider">
+              <span>Ver Detalhes</span>
+              <svg class="w-3.5 h-3.5 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+          </div>
+
+          <!-- Procedimento 3 -->
+          <div class="flat-card p-6 flex flex-col justify-between group">
+            <div>
+              <div class="h-32 bg-[#F4F6F9] border-2 border-[#CBD5E1] flex flex-col items-center justify-center p-4 mb-5 rounded-[2px] text-center">
+                <span class="text-xs font-extrabold uppercase tracking-wider text-[#FF6600]">Abdômen & Diástase</span>
+                <span class="text-sm font-bold text-[#0B2545] mt-1">Cintura Esculpida</span>
+              </div>
+              <h3 class="text-lg font-bold text-[#0B2545] mb-2 group-hover:text-[#0066CC] transition-colors">Lipoabdominoplastia</h3>
+              <p class="text-xs text-[#475569] leading-relaxed font-medium mb-4">
+                Associação cirúrgica para retirar o avental de pele flácida, amarrar a diástase muscular e esculpir a cintura.
+              </p>
+            </div>
+            <a href="lipoabdominoplastia.html" class="btn-flat-blue w-full py-2.5 text-xs uppercase tracking-wider">
+              <span>Ver Detalhes</span>
+              <svg class="w-3.5 h-3.5 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+          </div>
+
+          <!-- Procedimento 4 -->
+          <div class="flat-card p-6 flex flex-col justify-between group">
+            <div>
+              <div class="h-32 bg-[#F4F6F9] border-2 border-[#CBD5E1] flex flex-col items-center justify-center p-4 mb-5 rounded-[2px] text-center">
+                <span class="text-xs font-extrabold uppercase tracking-wider text-[#0B2545]">Lifting Natural</span>
+                <span class="text-sm font-bold text-[#0B2545] mt-1">Sem Implantes</span>
+              </div>
+              <h3 class="text-lg font-bold text-[#0B2545] mb-2 group-hover:text-[#0066CC] transition-colors">Mastopexia sem Prótese</h3>
+              <p class="text-xs text-[#475569] leading-relaxed font-medium mb-4">
+                Elevação e remodelamento dos seios utilizando o próprio tecido mamário da paciente como retalho anatômico sustentador.
+              </p>
+            </div>
+            <a href="mastopexia-sem-protese.html" class="btn-flat-blue w-full py-2.5 text-xs uppercase tracking-wider">
+              <span>Ver Detalhes</span>
+              <svg class="w-3.5 h-3.5 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         5. PRICING & CONDIÇÕES CIRÚRGICAS (3 Tiers, Destaque no Central)
+         ======================================================================== -->
+    <section class="py-16 lg:py-24 bg-[#F4F6F9] border-b-2 border-[#CBD5E1]" id="planos-section">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="flat-badge text-[#FF6600] border-[#FF6600] mb-3">Planejamento & Acessibilidade</div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#0B2545] tracking-tight">
+            Condições Transparentes para Cada Perfil de Paciente
+          </h2>
+          <p class="text-base text-[#475569] font-medium mt-3">
+            A cirurgia dos seus sonhos não precisa ficar apenas no papel. Escolha o formato de planejamento que melhor se adequa ao seu orçamento.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+          
+          <!-- Tier 1: Avaliação Especializada -->
+          <div class="flat-card p-8 flex flex-col justify-between">
+            <div>
+              <div class="text-xs font-extrabold text-[#0066CC] uppercase tracking-wider mb-2">Primeiro Passo</div>
+              <h3 class="text-2xl font-extrabold text-[#0B2545] mb-2">Consulta de Avaliação</h3>
+              <p class="text-sm text-[#475569] font-medium mb-6">Diagnóstico clínico individualizado e desenho do plano cirúrgico.</p>
+              
+              <div class="p-4 bg-[#F4F6F9] border-2 border-[#CBD5E1] rounded-[2px] mb-6">
+                <span class="text-xs font-bold text-[#475569] block">Investimento Inicial</span>
+                <span class="text-3xl font-extrabold text-[#0B2545]">Sob Consulta</span>
+                <span class="text-xs text-[#00A86B] font-bold flex items-center gap-1 mt-1">
+                  <svg class="w-3.5 h-3.5 text-[#00A86B] stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  <span>Descontada do pacote cirúrgico</span>
+                </span>
+              </div>
+
+              <ul class="space-y-3 text-sm text-[#0B2545] font-semibold mb-8">
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-[#00A86B] stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  <span>Exame físico detalhado das mamas e contorno</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-[#00A86B] stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  <span>Simulação e alinhamento de expectativas</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-[#00A86B] stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  <span>Solicitação completa de exames de risco</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-[#00A86B] stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  <span>Orçamento hospitalar transparente</span>
+                </li>
+              </ul>
+            </div>
+
+            <a href="contato.html" class="btn-flat-outline w-full py-3 text-sm uppercase tracking-wider">
+              <span>Agendar Minha Consulta</span>
+            </a>
+          </div>
+
+          <!-- Tier 2: Destaque Central (Cirurgia Programada) -->
+          <div class="flat-card-featured p-8 flex flex-col justify-between">
+            <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#FF6600] text-white px-4 py-1 text-xs font-extrabold uppercase tracking-wider rounded-[2px] border-2 border-[#0B2545]">
+              Mais Escolhido • Sem Juros
+            </div>
+
+            <div>
+              <div class="text-xs font-extrabold text-[#FF6600] uppercase tracking-wider mb-2 mt-2">Planejamento Antecipado</div>
+              <h3 class="text-2xl font-extrabold text-[#0B2545] mb-2">Cirurgia Programada</h3>
+              <p class="text-sm text-[#475569] font-medium mb-6">Programe sua cirurgia em parcelas mensais e opere 100% quitada.</p>
+              
+              <div class="p-4 bg-[#FFF7ED] border-2 border-[#FF6600] rounded-[2px] mb-6">
+                <span class="text-xs font-bold text-[#FF6600] block">Mensalidades Programadas</span>
+                <span class="text-3xl font-extrabold text-[#0B2545]">Parcelas Sob Medida</span>
+                <span class="text-xs text-[#00A86B] font-bold flex items-center gap-1 mt-1">
+                  <svg class="w-3.5 h-3.5 text-[#00A86B] stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  <span>Sem juros bancários até a data da cirurgia</span>
+                </span>
+              </div>
+
+              <ul class="space-y-3 text-sm text-[#0B2545] font-semibold mb-8">
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-[#00A86B] stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  <span>Reserva garantida do Centro Cirúrgico Oeste Day</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-[#00A86B] stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  <span>Equipe de Cirurgia Plástica SBCP + Anestesista</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-[#00A86B] stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  <span>Leito de recuperação URPA e enfermagem dedicada</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-[#00A86B] stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  <span>Pacote completo fechado sem custos surpresa</span>
+                </li>
+              </ul>
+            </div>
+
+            <a href="contato.html" class="btn-flat-primary w-full py-4 text-base uppercase tracking-wider">
+              <span>Simular Meu Planejamento</span>
+            </a>
+          </div>
+
+          <!-- Tier 3: Day Hospital Imediato (Cartão / À Vista) -->
+          <div class="flat-card p-8 flex flex-col justify-between">
+            <div>
+              <div class="text-xs font-extrabold text-[#00A86B] uppercase tracking-wider mb-2">Agendamento Imediato</div>
+              <h3 class="text-2xl font-extrabold text-[#0B2545] mb-2">Day Hospital Completo</h3>
+              <p class="text-sm text-[#475569] font-medium mb-6">Data cirúrgica próxima com facilidade no cartão de crédito.</p>
+              
+              <div class="p-4 bg-[#F4F6F9] border-2 border-[#CBD5E1] rounded-[2px] mb-6">
+                <span class="text-xs font-bold text-[#475569] block">Condição Facilitada</span>
+                <span class="text-3xl font-extrabold text-[#0B2545]">Até 18x no Cartão</span>
+                <span class="text-xs text-[#0066CC] font-bold flex items-center gap-1 mt-1">
+                  <svg class="w-3.5 h-3.5 text-[#0066CC] stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  <span>Opção de entrada + parcelamento</span>
+                </span>
+              </div>
+
+              <ul class="space-y-3 text-sm text-[#0B2545] font-semibold mb-8">
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-[#00A86B] stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  <span>Agendamento ágil de data no centro cirúrgico</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-[#00A86B] stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  <span>Divisão em múltiplos cartões de crédito</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-[#00A86B] stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  <span>Materiais e órteses cirúrgicas de padrão Anvisa</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-[#00A86B] stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  <span>Assistência pós-anestésica contínua</span>
+                </li>
+              </ul>
+            </div>
+
+            <a href="contato.html" class="btn-flat-outline w-full py-3 text-sm uppercase tracking-wider">
+              <span>Consultar Datas Disponíveis</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         6. TESTIMONIALS (3 Cards Flat com Ícones SVG)
+         ======================================================================== -->
+    <section class="py-16 lg:py-20 bg-white border-b-2 border-[#CBD5E1]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <div class="flat-badge text-[#0066CC] border-[#0066CC] mb-3">Histórias Reais</div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#0B2545] tracking-tight">
+            O que dizem as pacientes que operaram no Oeste Day
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Depoimento 1 -->
+          <div class="flat-card p-8 flex flex-col justify-between">
+            <div>
+              <!-- 5 Estrelas SVG -->
+              <div class="flex items-center gap-1 text-[#FF6600] mb-4">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              </div>
+              <p class="text-sm text-[#0B2545] font-medium leading-relaxed italic mb-6">
+                "Fazer minha mastopexia com prótese no Oeste Day foi a melhor decisão. A sensação de estar em um hospital que só faz plástica me passou uma tranquilidade imensa. Voltei para casa no mesmo dia sem nenhuma dor!"
+              </p>
+            </div>
+            <div class="pt-4 border-t-2 border-[#E2E8F0] flex items-center justify-between">
+              <div>
+                <span class="block font-bold text-sm text-[#0B2545]">Mariana S., 34 anos</span>
+                <span class="block text-xs font-semibold text-[#0066CC]">Mastopexia com Prótese</span>
+              </div>
+              <div class="w-8 h-8 bg-[#0066CC] text-white flex items-center justify-center font-bold text-xs rounded-[2px]">MS</div>
+            </div>
+          </div>
+
+          <!-- Depoimento 2 -->
+          <div class="flat-card p-8 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-1 text-[#FF6600] mb-4">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              </div>
+              <p class="text-sm text-[#0B2545] font-medium leading-relaxed italic mb-6">
+                "Optei pela Cirurgia Programada após ter gêmeos. Fui pagando sem pesar no bolso e quando chegou o dia da minha lipoabdominoplastia estava tudo resolvido. A barriga ficou retinha e sem diástase."
+              </p>
+            </div>
+            <div class="pt-4 border-t-2 border-[#E2E8F0] flex items-center justify-between">
+              <div>
+                <span class="block font-bold text-sm text-[#0B2545]">Carla M., 41 anos</span>
+                <span class="block text-xs font-semibold text-[#00A86B]">Lipoabdominoplastia</span>
+              </div>
+              <div class="w-8 h-8 bg-[#00A86B] text-white flex items-center justify-center font-bold text-xs rounded-[2px]">CM</div>
+            </div>
+          </div>
+
+          <!-- Depoimento 3 -->
+          <div class="flat-card p-8 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-1 text-[#FF6600] mb-4">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              </div>
+              <p class="text-sm text-[#0B2545] font-medium leading-relaxed italic mb-6">
+                "A cintura ficou super desenhada e a gordura enxertada no bumbum ficou perfeita, sem exageros. O atendimento da recepção e das enfermeiras foi impecável do início ao fim."
+              </p>
+            </div>
+            <div class="pt-4 border-t-2 border-[#E2E8F0] flex items-center justify-between">
+              <div>
+                <span class="block font-bold text-sm text-[#0B2545]">Juliana R., 28 anos</span>
+                <span class="block text-xs font-semibold text-[#FF6600]">Lipoescultura 360</span>
+              </div>
+              <div class="w-8 h-8 bg-[#FF6600] text-white flex items-center justify-center font-bold text-xs rounded-[2px]">JR</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         7. CTA FINAL (Banner Flat de Alta Conversão, 2D, Sem Gradientes)
+         ======================================================================== -->
+    <section class="py-16 lg:py-20 bg-[#0B2545] text-white border-b-2 border-[#0B2545]">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        
+        <div class="inline-block bg-[#0066CC] text-white text-xs font-extrabold uppercase tracking-wider px-3.5 py-1 mb-6 rounded-[2px] border-2 border-white">
+          Dê o Primeiro Passo Hoje
+        </div>
+
+        <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-6 leading-tight">
+          Pronta para viver a transformação que você sempre desejou?
+        </h2>
+
+        <p class="text-base sm:text-lg text-[#CBD5E1] max-w-2xl mx-auto mb-10 font-medium leading-relaxed">
+          Agende sua consulta de triagem no Hospital Dia Oeste Day em Jacarepaguá e conheça nossos planos de cirurgia programada. Atendimento acolhedor, rápido e sem compromisso.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="https://wa.me/552137381500" target="_blank" rel="noopener noreferrer" class="btn-flat-primary px-8 py-4 text-base w-full sm:w-auto uppercase tracking-wider">
+            <!-- SVG WhatsApp / Message -->
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.585 1.961.905 2.796.905h.005c3.18 0 5.767-2.587 5.768-5.766.001-3.182-2.585-5.77-5.773-5.772zm3.376 8.217c-.14.394-.808.73-1.119.776-.302.044-.693.078-2.227-.557-1.874-.775-3.08-2.679-3.175-2.805-.094-.127-.756-1.008-.756-1.923 0-.916.479-1.365.65-1.547.17-.183.374-.229.5-.229.125 0 .25.002.359.007.115.006.269-.044.421.323.159.382.544 1.328.591 1.424.047.096.079.208.016.333-.063.125-.094.204-.188.313-.094.109-.197.243-.282.327-.094.094-.192.197-.082.386.11.189.489.808 1.05 1.308.723.644 1.332.844 1.521.938.189.094.3.079.412-.047.112-.126.479-.558.607-.749.127-.19.255-.159.426-.095.172.064 1.091.515 1.278.608.188.094.313.141.359.22.047.078.047.453-.093.847z"/></svg>
+            <span>Agendar Avaliação pelo WhatsApp</span>
+          </a>
+          <a href="contato.html" class="btn-flat-outline bg-transparent border-white text-white hover:bg-white hover:text-[#0B2545] px-8 py-4 text-base w-full sm:w-auto uppercase tracking-wider">
+            <span>Ver Mapa & Rotas de Chegada</span>
+          </a>
+        </div>
+
+        <p class="text-xs text-[#94A3B8] font-bold mt-6 tracking-wide">
+          Atendimento de Seg a Sex, das 08h às 18h • Jacarepaguá, Rio de Janeiro - RJ
+        </p>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       8. FOOTER COMPLETO (Copyright 2026, Links SEO, Redes Sociais SVG)
+       ======================================================================== -->
+  <footer class="bg-white border-t-4 border-[#0B2545] text-[#0B2545] pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-14">
+        
+        <!-- Coluna 1: Branding & Proposta -->
+        <div class="lg:col-span-2">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 bg-[#0066CC] border-2 border-[#0B2545] flex items-center justify-center text-white font-extrabold text-base rounded-[2px]">
+              OD
+            </div>
+            <span class="text-xl font-extrabold tracking-tight text-[#0B2545]">Hospital Oeste Day</span>
+          </div>
+          <p class="text-sm text-[#475569] leading-relaxed font-medium mb-6 max-w-sm">
+            Hospital Dia de referência no Rio de Janeiro dedicado exclusivamente a cirurgias plásticas eletivas e reparadoras. 2.000 m² de centro cirúrgico com os mais rigorosos padrões de assepsia e acolhimento humano.
+          </p>
+          
+          <!-- Redes Sociais SVG Inline -->
+          <div class="flex items-center gap-3">
+            <!-- Instagram -->
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 bg-[#F4F6F9] border-2 border-[#0B2545] flex items-center justify-center text-[#0B2545] hover:bg-[#0066CC] hover:text-white transition-all cursor-pointer rounded-[2px]" aria-label="Instagram">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <!-- WhatsApp -->
+            <a href="https://wa.me/552137381500" target="_blank" rel="noopener noreferrer" class="w-9 h-9 bg-[#F4F6F9] border-2 border-[#0B2545] flex items-center justify-center text-[#0B2545] hover:bg-[#00A86B] hover:text-white transition-all cursor-pointer rounded-[2px]" aria-label="WhatsApp">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.585 1.961.905 2.796.905h.005c3.18 0 5.767-2.587 5.768-5.766.001-3.182-2.585-5.77-5.773-5.772zm3.376 8.217c-.14.394-.808.73-1.119.776-.302.044-.693.078-2.227-.557-1.874-.775-3.08-2.679-3.175-2.805-.094-.127-.756-1.008-.756-1.923 0-.916.479-1.365.65-1.547.17-.183.374-.229.5-.229.125 0 .25.002.359.007.115.006.269-.044.421.323.159.382.544 1.328.591 1.424.047.096.079.208.016.333-.063.125-.094.204-.188.313-.094.109-.197.243-.282.327-.094.094-.192.197-.082.386.11.189.489.808 1.05 1.308.723.644 1.332.844 1.521.938.189.094.3.079.412-.047.112-.126.479-.558.607-.749.127-.19.255-.159.426-.095.172.064 1.091.515 1.278.608.188.094.313.141.359.22.047.078.047.453-.093.847z"/></svg>
+            </a>
+            <!-- Facebook -->
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 bg-[#F4F6F9] border-2 border-[#0B2545] flex items-center justify-center text-[#0B2545] hover:bg-[#0066CC] hover:text-white transition-all cursor-pointer rounded-[2px]" aria-label="Facebook">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.5 5H18V0h-3.808C10.592 0 9 1.583 9 4.615V8z"/></svg>
+            </a>
+            <!-- YouTube -->
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 bg-[#F4F6F9] border-2 border-[#0B2545] flex items-center justify-center text-[#0B2545] hover:bg-[#FF6600] hover:text-white transition-all cursor-pointer rounded-[2px]" aria-label="YouTube">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Coluna 2: Procedimentos -->
+        <div>
+          <h4 class="text-sm font-extrabold uppercase tracking-wider text-[#0B2545] mb-4">Procedimentos</h4>
+          <ul class="space-y-2.5 text-sm font-semibold text-[#475569]">
+            <li><a href="lipoescultura.html" class="hover:text-[#0066CC] transition-colors cursor-pointer">Lipoescultura & Lipo 360</a></li>
+            <li><a href="mastopexia-com-protese.html" class="hover:text-[#0066CC] transition-colors cursor-pointer">Mastopexia com Prótese</a></li>
+            <li><a href="lipoabdominoplastia.html" class="hover:text-[#0066CC] transition-colors cursor-pointer">Lipoabdominoplastia</a></li>
+            <li><a href="mastopexia-sem-protese.html" class="hover:text-[#0066CC] transition-colors cursor-pointer">Mastopexia sem Prótese</a></li>
+            <li><a href="#procedimentos-section" class="hover:text-[#0066CC] transition-colors cursor-pointer text-[#0066CC]">Ver Todos os Procedimentos</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: Institucional -->
+        <div>
+          <h4 class="text-sm font-extrabold uppercase tracking-wider text-[#0B2545] mb-4">Institucional</h4>
+          <ul class="space-y-2.5 text-sm font-semibold text-[#475569]">
+            <li><a href="sobre.html" class="hover:text-[#0066CC] transition-colors cursor-pointer">Sobre o Oeste Day</a></li>
+            <li><a href="#planos-section" class="hover:text-[#0066CC] transition-colors cursor-pointer">Cirurgia Programada</a></li>
+            <li><a href="faq.html" class="hover:text-[#0066CC] transition-colors cursor-pointer">Perguntas Frequentes (FAQ)</a></li>
+            <li><a href="contato.html" class="hover:text-[#0066CC] transition-colors cursor-pointer">Localização & Rotas</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 4: Atendimento & Horários -->
+        <div>
+          <h4 class="text-sm font-extrabold uppercase tracking-wider text-[#0B2545] mb-4">Atendimento</h4>
+          <p class="text-xs font-semibold text-[#475569] mb-2 leading-relaxed">
+            Rua Atininga, 684 – Jacarepaguá, Rio de Janeiro - RJ
+          </p>
+          <p class="text-xs font-semibold text-[#475569] mb-3">
+            Horário: Seg a Sex, das 08h às 18h
+          </p>
+          <p class="text-sm font-extrabold text-[#0066CC]">
+            (21) 3738-1500
+          </p>
+          <p class="text-xs font-bold text-[#00A86B] mt-1">
+            WhatsApp Oficial Ativo
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Barra Inferior de Conformidade e Direitos -->
+      <div class="pt-8 border-t-2 border-[#CBD5E1] flex flex-col md:flex-row items-center justify-between text-xs text-[#64748B] font-semibold gap-4">
+        <div>
+          © 2026 Hospital Oeste Day. Todos os direitos reservados.
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="javascript:void(0)" class="hover:text-[#0B2545] transition-colors">Política de Privacidade</a>
+          <span>•</span>
+          <a href="javascript:void(0)" class="hover:text-[#0B2545] transition-colors">Termos de Uso</a>
+          <span>•</span>
+          <span>Membro SBCP com RQE ativo • Resolução CFM nº 1.974/11</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Script Modular de Navegação e Acessibilidade -->
+  <script src="nav.js"></script>
+</body>
+</html>
