@@ -158,4 +158,37 @@ document.addEventListener('DOMContentLoaded', () => {
       nextBtn.addEventListener('click', () => updateActiveItem(currentIndex + 1));
     }
   });
+
+  // 4. Abas Interativas de Procedimentos (Flat Tabs System)
+  const tabButtons = document.querySelectorAll('[data-tab-target]');
+  const tabPanels = document.querySelectorAll('[data-tab-panel]');
+
+  if (tabButtons.length && tabPanels.length) {
+    tabButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const targetId = btn.getAttribute('data-tab-target');
+
+        // Atualiza estilo dos botões das abas
+        tabButtons.forEach((b) => {
+          b.classList.remove('bg-[#0066CC]', 'text-white', 'border-[#0B2545]', 'is-active');
+          b.classList.add('bg-[#F4F6F9]', 'text-[#0B2545]', 'border-[#CBD5E1]');
+          b.setAttribute('aria-selected', 'false');
+        });
+
+        btn.classList.add('bg-[#0066CC]', 'text-white', 'border-[#0B2545]', 'is-active');
+        btn.classList.remove('bg-[#F4F6F9]', 'bg-white', 'text-[#0B2545]', 'border-[#CBD5E1]');
+        btn.setAttribute('aria-selected', 'true');
+
+        // Alterna visibilidade dos painéis
+        tabPanels.forEach((panel) => {
+          const panelTarget = panel.getAttribute('data-tab-panel') || panel.id;
+          if (panelTarget === targetId) {
+            panel.classList.remove('hidden');
+          } else {
+            panel.classList.add('hidden');
+          }
+        });
+      });
+    });
+  }
 });

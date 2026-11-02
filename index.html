@@ -81,169 +81,139 @@
 
   <main>
     <!-- ========================================================================
-         2. HERO SECTION (Impactante, 2 Botões, Composição Geométrica 2D Flat)
+         2. HERO SECTION (Foto de Fundo com Overlay, Headline & Ações 2D Flat)
          ======================================================================== -->
-    <section class="py-16 lg:py-24 bg-white border-b-2 border-[#CBD5E1]">
+    <section class="relative py-20 lg:py-32 bg-[#0B2545] border-b-2 border-[#0B2545] overflow-hidden text-white">
+      <!-- Background Image with Dark Contrast Overlay -->
+      <div class="absolute inset-0 z-0">
+        <img 
+          src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1920&q=80" 
+          alt="Centro Cirúrgico Hospital Oeste Day" 
+          class="w-full h-full object-cover object-center filter brightness-[0.35] contrast-[1.05]"
+          onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1920&q=80';"
+        />
+        <div class="absolute inset-0 bg-gradient-to-r from-[#0B2545]/95 via-[#0B2545]/85 to-[#0B2545]/70"></div>
+      </div>
+
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#0066CC] text-white border-2 border-white rounded-[2px] font-bold text-xs uppercase tracking-wider mb-6">
+            <svg class="w-4 h-4 stroke-[2]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+            <span>Hospital Dia Especializado em Cirurgia Plástica • Jacarepaguá, RJ</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-[1.18] mb-6">
+            Realize a cirurgia plastica dos seus sonhos com a seguranca de um hospital de ponta no Rio de Janeiro.
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-200 leading-relaxed mb-10 font-normal max-w-2xl">
+            Localizado em Jacarepaguá - Rio de Janeiro, o Hospital Oeste Day possui mais de 2000 m2 de infraestrutura cirurgica dedicada exclusivamente a procedimentos eletivos.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4">
+            <a href="contato.html" class="btn-flat-primary px-8 py-4 text-base bg-[#FF6600] text-white hover:bg-[#e05a00] border-2 border-white">
+              <span>Agendar Minha Avaliação</span>
+              <svg class="w-5 h-5 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+            <a href="#procedimentos-section" class="btn-flat-outline px-8 py-4 text-base bg-white/10 text-white border-2 border-white hover:bg-white hover:text-[#0B2545]">
+              <span>Conhecer Procedimentos</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         3. DIFERENCIAIS / SOBRE NÓS (2 Colunas: Foto Esquerda | Conteúdo Direita)
+         ======================================================================== -->
+    <section class="py-16 lg:py-24 bg-[#F4F6F9] border-b-2 border-[#CBD5E1]" id="sobre-nos">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
-          <!-- Coluna Esquerda: Textos & Ações -->
-          <div class="lg:col-span-7">
-            <div class="flat-badge text-[#0066CC] border-[#0066CC] bg-[#F4F6F9] mb-6">
-              <!-- SVG Hospital Icon -->
-              <svg class="w-4 h-4 stroke-[2]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
-              <span>Hospital Dia Especializado em Cirurgia Plástica • Jacarepaguá, RJ</span>
-            </div>
-
-            <h1 class="text-4xl sm:text-5xl lg:text-5xl font-extrabold text-[#0B2545] tracking-tight leading-[1.15] mb-6">
-              Realize a cirurgia plástica dos seus sonhos com a segurança de um <span class="text-[#0066CC] underline decoration-4 decoration-[#FF6600]">hospital de ponta</span>.
-            </h1>
-
-            <p class="text-lg text-[#475569] leading-relaxed mb-8 max-w-2xl font-medium">
-              Mais de 2.000 m² de infraestrutura cirúrgica dedicada exclusivamente a procedimentos eletivos. Cirurgiões com RQE ativo e membros da SBCP, com planos de cirurgia programada e parcelamento facilitado em até 18x.
-            </p>
-
-            <div class="flex flex-wrap items-center gap-4 mb-10">
-              <a href="contato.html" class="btn-flat-primary px-8 py-4 text-base">
-                <span>Agendar Minha Avaliação</span>
-                <!-- SVG Arrow Right -->
-                <svg class="w-5 h-5 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-              </a>
-              <a href="#procedimentos-section" class="btn-flat-outline px-8 py-4 text-base">
-                <span>Conhecer Procedimentos</span>
-              </a>
-            </div>
-
-            <!-- Badges Flat de Confiança -->
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-6 border-t-2 border-[#E2E8F0]">
-              <div class="flex items-center gap-2">
-                <div class="w-6 h-6 bg-[#00A86B] text-white flex items-center justify-center rounded-[2px] shrink-0 font-bold text-xs">
-                  <svg class="w-4 h-4 stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                </div>
-                <span class="text-xs font-bold text-[#0B2545]">Livre de Infecções</span>
+          <!-- Coluna Esquerda: Foto Estrutural com Badge Flat -->
+          <div class="lg:col-span-5">
+            <div class="relative bg-white border-2 border-[#0B2545] p-3 rounded-[2px]">
+              <div class="absolute -top-3.5 left-4 bg-[#0B2545] text-white border-2 border-[#0B2545] px-3 py-0.5 font-extrabold text-[11px] uppercase tracking-wider rounded-[2px] z-10">
+                Estrutura Própria • Grupo Capobianco
               </div>
-              <div class="flex items-center gap-2">
-                <div class="w-6 h-6 bg-[#0066CC] text-white flex items-center justify-center rounded-[2px] shrink-0 font-bold text-xs">
-                  <svg class="w-4 h-4 stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                </div>
-                <span class="text-xs font-bold text-[#0B2545]">Membros da SBCP</span>
+              <div class="relative overflow-hidden border-2 border-[#0B2545] rounded-[2px] aspect-[4/3] bg-slate-100">
+                <img 
+                  src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=900&q=80" 
+                  alt="Instalações Hospital Oeste Day - Grupo Capobianco" 
+                  class="w-full h-full object-cover"
+                />
               </div>
-              <div class="flex items-center gap-2">
-                <div class="w-6 h-6 bg-[#FF6600] text-white flex items-center justify-center rounded-[2px] shrink-0 font-bold text-xs">
-                  <svg class="w-4 h-4 stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+              <div class="mt-3 p-3 bg-[#F4F6F9] border-2 border-[#CBD5E1] rounded-[2px] flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <div class="w-3 h-3 bg-[#00A86B] rounded-full"></div>
+                  <span class="text-xs font-bold text-[#0B2545]">Centro Cirúrgico de Alta Complexidade</span>
                 </div>
-                <span class="text-xs font-bold text-[#0B2545]">Em até 18x no Cartão</span>
+                <span class="text-[11px] font-extrabold text-[#0066CC] uppercase">Jacarepaguá - RJ</span>
               </div>
             </div>
           </div>
 
-          <!-- Coluna Direita: Módulo Fotográfico / Carrossel com Legenda Descritiva -->
-          <div class="lg:col-span-5 flex justify-center" data-photo-gallery>
-            <div class="w-full max-w-lg bg-white border-2 border-[#0B2545] p-4 sm:p-5 rounded-[2px] relative">
+          <!-- Coluna Direita: Narrativa & Grid 2x2 de Diferenciais -->
+          <div class="lg:col-span-7">
+            <div class="flat-badge text-[#0066CC] border-[#0066CC] bg-white mb-3">Grupo Capobianco</div>
+            
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-[#0B2545] tracking-tight leading-tight mb-6">
+              Excelência, segurança e cuidado em cada detalhe.
+            </h2>
+
+            <div class="space-y-4 text-[#475569] text-base leading-relaxed font-medium mb-8">
+              <p>
+                Localizado em Jacarepaguá, no Rio de Janeiro, o Hospital Oeste Day faz parte do Grupo Capobianco, onde une a experiência e a credibilidade do Dr. Rogério Capobianco a uma estrutura hospitalar pensada para proporcionar segurança, conforto e tranquilidade aos pacientes.
+              </p>
+              <p>
+                Com ambientes planejados para oferecer uma experiência de cuidado diferenciada, o hospital prioriza a qualidade do atendimento e a segurança em cada etapa da jornada cirúrgica.
+              </p>
+              <p>
+                Além de sua localização estratégica, oferece facilidades de pagamento que tornam o acesso aos procedimentos mais conveniente, unindo excelência hospitalar, acolhimento e praticidade em um só lugar.
+              </p>
+            </div>
+
+            <!-- Grid 2x2 Diferenciais -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               
-              <!-- Selo Topo Direito -->
-              <div class="absolute -top-3.5 right-4 bg-[#FF6600] text-white border-2 border-[#0B2545] px-3 py-0.5 font-extrabold text-[11px] uppercase tracking-wider rounded-[2px] z-10" data-img-badge>
-                Complexo Hospitalar • 2.000 m²
-              </div>
-
-              <!-- Viewport da Imagem Principal -->
-              <div class="relative overflow-hidden border-2 border-[#0B2545] rounded-[2px] bg-[#F4F6F9] aspect-[4/3] flex items-center justify-center group">
-                <img 
-                  data-main-img 
-                  src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80" 
-                  alt="Centro Cirúrgico Oeste Day - Hospital Dia RJ" 
-                  class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                  onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=800&q=80';"
-                />
-                
-                <!-- Botões de Navegação Flutuantes -->
-                <button 
-                  type="button" 
-                  data-prev-btn 
-                  class="absolute left-2.5 top-1/2 -translate-y-1/2 w-9 h-9 bg-white/90 border-2 border-[#0B2545] flex items-center justify-center text-[#0B2545] hover:bg-[#0066CC] hover:text-white transition-colors cursor-pointer rounded-[2px]"
-                  aria-label="Foto anterior"
-                >
-                  <svg class="w-4 h-4 stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
-                </button>
-                <button 
-                  type="button" 
-                  data-next-btn 
-                  class="absolute right-2.5 top-1/2 -translate-y-1/2 w-9 h-9 bg-white/90 border-2 border-[#0B2545] flex items-center justify-center text-[#0B2545] hover:bg-[#0066CC] hover:text-white transition-colors cursor-pointer rounded-[2px]"
-                  aria-label="Próxima foto"
-                >
-                  <svg class="w-4 h-4 stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
-                </button>
-              </div>
-
-              <!-- Barra de Legenda Descritiva da Imagem -->
-              <div class="mt-3.5 p-3 bg-[#F4F6F9] border-2 border-[#CBD5E1] rounded-[2px]">
-                <div class="flex items-center justify-between text-xs font-extrabold text-[#0B2545] uppercase tracking-wider mb-1">
-                  <span data-img-title>Centro Cirúrgico de Alta Tecnologia</span>
-                  <span class="text-[#00A86B] flex items-center gap-1 font-bold">
-                    <span class="w-2 h-2 rounded-full bg-[#00A86B]"></span> 100% Eletivo
-                  </span>
+              <!-- Card 1 -->
+              <div class="p-5 bg-white border-2 border-[#0B2545] rounded-[2px]">
+                <div class="w-10 h-10 bg-[#0066CC] text-white flex items-center justify-center rounded-[2px] border-2 border-[#0B2545] mb-3">
+                  <svg class="w-5 h-5 stroke-[2]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
                 </div>
-                <p data-img-desc class="text-xs text-[#475569] font-medium leading-relaxed">
-                  Salas cirúrgicas com fluxo asséptico rigoroso e leitos de recuperação pós-anestésica individualizados.
-                </p>
+                <h3 class="text-base font-bold text-[#0B2545] mb-1">Segurança hospitalar</h3>
+                <p class="text-xs text-[#475569] leading-relaxed">Cuidado e atenção em cada etapa da jornada.</p>
               </div>
 
-              <!-- Grade de Miniaturas Navegáveis -->
-              <div class="grid grid-cols-4 gap-2 mt-3">
-                <button 
-                  type="button" 
-                  data-thumb-btn 
-                  data-img-src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80"
-                  data-title="Centro Cirúrgico de Alta Tecnologia"
-                  data-desc="Salas cirúrgicas com fluxo asséptico rigoroso e leitos de recuperação pós-anestésica individualizados."
-                  data-badge="Complexo Hospitalar • 2.000 m²"
-                  class="h-14 border-2 border-[#0066CC] ring-2 ring-[#0066CC] overflow-hidden rounded-[2px] cursor-pointer transition-all bg-[#CBD5E1]"
-                  aria-label="Ver Centro Cirúrgico"
-                >
-                  <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=200&q=70" alt="Centro Cirúrgico" class="w-full h-full object-cover"/>
-                </button>
+              <!-- Card 2 -->
+              <div class="p-5 bg-white border-2 border-[#0B2545] rounded-[2px]">
+                <div class="w-10 h-10 bg-[#00A86B] text-white flex items-center justify-center rounded-[2px] border-2 border-[#0B2545] mb-3">
+                  <svg class="w-5 h-5 stroke-[2]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+                </div>
+                <h3 class="text-base font-bold text-[#0B2545] mb-1">Estrutura e conforto</h3>
+                <p class="text-xs text-[#475569] leading-relaxed">Ambientes planejados para proporcionar tranquilidade e bem-estar.</p>
+              </div>
 
-                <button 
-                  type="button" 
-                  data-thumb-btn 
-                  data-img-src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=800&q=80"
-                  data-title="Fachada & Complexo Hospitalar"
-                  data-desc="Estrutura de 2.000 m² em Jacarepaguá com estacionamento e acesso facilitado por vias expressas."
-                  data-badge="Jacarepaguá • Rio de Janeiro"
-                  class="h-14 border-2 border-[#CBD5E1] opacity-60 hover:opacity-100 overflow-hidden rounded-[2px] cursor-pointer transition-all bg-[#CBD5E1]"
-                  aria-label="Ver Fachada"
-                >
-                  <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=200&q=70" alt="Fachada Hospitalar" class="w-full h-full object-cover"/>
-                </button>
+              <!-- Card 3 -->
+              <div class="p-5 bg-white border-2 border-[#0B2545] rounded-[2px]">
+                <div class="w-10 h-10 bg-[#FF6600] text-white flex items-center justify-center rounded-[2px] border-2 border-[#0B2545] mb-3">
+                  <svg class="w-5 h-5 stroke-[2]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                </div>
+                <h3 class="text-base font-bold text-[#0B2545] mb-1">Localização estratégica</h3>
+                <p class="text-xs text-[#475569] leading-relaxed">Em Jacarepaguá, no Rio de Janeiro.</p>
+              </div>
 
-                <button 
-                  type="button" 
-                  data-thumb-btn 
-                  data-img-src="https://images.unsplash.com/photo-1512678080530-7760d81faba6?auto=format&fit=crop&w=800&q=80"
-                  data-title="Unidade de Recuperação (URPA)"
-                  data-desc="Apartamentos e leitos privativos equipados para alta assistida no mesmo dia com total acolhimento."
-                  data-badge="Recuperação Confortável"
-                  class="h-14 border-2 border-[#CBD5E1] opacity-60 hover:opacity-100 overflow-hidden rounded-[2px] cursor-pointer transition-all bg-[#CBD5E1]"
-                  aria-label="Ver Recuperação URPA"
-                >
-                  <img src="https://images.unsplash.com/photo-1512678080530-7760d81faba6?auto=format&fit=crop&w=200&q=70" alt="Recuperação URPA" class="w-full h-full object-cover"/>
-                </button>
-
-                <button 
-                  type="button" 
-                  data-thumb-btn 
-                  data-img-src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80"
-                  data-title="Recepção & Concierge Dedicado"
-                  data-desc="Ambiente acolhedor e exclusivo para atendimento pontual de pacientes e seus acompanhantes."
-                  data-badge="Atendimento Humanizado"
-                  class="h-14 border-2 border-[#CBD5E1] opacity-60 hover:opacity-100 overflow-hidden rounded-[2px] cursor-pointer transition-all bg-[#CBD5E1]"
-                  aria-label="Ver Recepção"
-                >
-                  <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=200&q=70" alt="Recepção" class="w-full h-full object-cover"/>
-                </button>
+              <!-- Card 4 -->
+              <div class="p-5 bg-white border-2 border-[#0B2545] rounded-[2px]">
+                <div class="w-10 h-10 bg-[#0B2545] text-white flex items-center justify-center rounded-[2px] border-2 border-[#0B2545] mb-3">
+                  <svg class="w-5 h-5 stroke-[2]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
+                </div>
+                <h3 class="text-base font-bold text-[#0B2545] mb-1">Facilidades de pagamento</h3>
+                <p class="text-xs text-[#475569] leading-relaxed">Condições que oferecem mais flexibilidade ao financeiro.</p>
               </div>
 
             </div>
+
           </div>
 
         </div>
@@ -251,172 +221,580 @@
     </section>
 
     <!-- ========================================================================
-         3. FEATURES / DIFERENCIAIS (3 Cards com Ícones SVG Inline)
+         NOSSOS RESULTADOS (Carrossel Contínuo em Loop de Fotos • Padrão Flat 2D)
          ======================================================================== -->
-    <section class="py-16 lg:py-20 bg-[#F4F6F9] border-b-2 border-[#CBD5E1]">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="text-center max-w-3xl mx-auto mb-14">
-          <div class="flat-badge text-[#0066CC] border-[#0066CC] mb-3">O Padrão Ouro em Procedimentos Eletivos</div>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#0B2545] tracking-tight">
-            Por que o modelo Hospital Dia é a escolha mais segura?
-          </h2>
-          <p class="text-base text-[#475569] font-medium mt-3">
-            Estrutura desenhada para maximizar a segurança médica, eliminar filas de espera hospitalar e proporcionar um pós-operatório acolhedor.
-          </p>
+    <section class="py-16 lg:py-24 bg-[#0B2545] border-b-2 border-[#0B2545] overflow-hidden text-white" id="resultados">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 bg-[#0066CC] text-white border-2 border-white rounded-[2px] font-bold text-xs uppercase tracking-wider mb-3">
+              Galeria Clínica
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+              Nossos Resultados
+            </h2>
+            <p class="text-slate-300 text-sm sm:text-base mt-2 max-w-2xl font-medium">
+              Transformações reais e contornos esculpidos com excelência médica, tecnologia avançada e rigor hospitalar.
+            </p>
+          </div>
+          <a href="contato.html" class="btn-flat-primary px-6 py-3 text-sm shrink-0 bg-[#FF6600] text-white border-2 border-white hover:bg-[#e05a00]">
+            <span>Quero Minha Transformação</span>
+            <svg class="w-4 h-4 stroke-[2]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
         </div>
+      </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Trilha do Carrossel em Loop Infinito -->
+      <div class="w-full overflow-hidden relative">
+        <div class="flex gap-6 animate-infinite-loop w-max py-2">
           
           <!-- Card 1 -->
-          <div class="flat-card p-8 flex flex-col justify-between">
-            <div>
-              <div class="w-14 h-14 bg-[#0066CC] text-white flex items-center justify-center rounded-[2px] border-2 border-[#0B2545] mb-6">
-                <!-- SVG Shield Check -->
-                <svg class="w-8 h-8 stroke-[2]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-              </div>
-              <h3 class="text-xl font-bold text-[#0B2545] mb-3">Risco Mínimo de Infecção</h3>
-              <p class="text-[#475569] text-sm leading-relaxed font-medium">
-                Diferente de hospitais gerais, não realizamos atendimento de emergência nem internamos doentes infectocontagiosos. Nosso centro cirúrgico atende unicamente cirurgias eletivas planejadas.
-              </p>
+          <div class="w-72 sm:w-80 shrink-0 bg-white border-2 border-[#CBD5E1] p-3 rounded-[2px] text-[#0B2545]">
+            <div class="relative aspect-[4/3] overflow-hidden rounded-[2px] border-2 border-[#0B2545] mb-3 bg-slate-100">
+              <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=600&q=80" alt="Resultado Lipoaspiração e Definição" class="w-full h-full object-cover">
+              <span class="absolute top-2 left-2 bg-[#0066CC] text-white font-extrabold text-[10px] uppercase px-2 py-0.5 rounded-[2px] border border-white">Lipoaspiração HD</span>
             </div>
-            <div class="pt-6 mt-6 border-t-2 border-[#E2E8F0] flex items-center gap-2 text-xs font-bold text-[#0066CC]">
-              <span>Ambiente 100% Controlado</span>
-              <svg class="w-4 h-4 stroke-[2]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
-            </div>
+            <h4 class="font-bold text-sm text-[#0B2545]">Contorno Abdominal & Cintura</h4>
+            <p class="text-xs text-[#475569] mt-1">Harmonização corporal com remoção estratégica de gordura e enxertia.</p>
           </div>
 
           <!-- Card 2 -->
-          <div class="flat-card p-8 flex flex-col justify-between">
-            <div>
-              <div class="w-14 h-14 bg-[#00A86B] text-white flex items-center justify-center rounded-[2px] border-2 border-[#0B2545] mb-6">
-                <!-- SVG Award / Badge -->
-                <svg class="w-8 h-8 stroke-[2]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
-              </div>
-              <h3 class="text-xl font-bold text-[#0B2545] mb-3">Cirurgiões Titulares SBCP</h3>
-              <p class="text-[#475569] text-sm leading-relaxed font-medium">
-                Todo o corpo clínico parceiro possui Registro de Qualificação de Especialista (RQE) ativo e título da Sociedade Brasileira de Cirurgia Plástica, garantindo rigor técnico e ético.
-              </p>
+          <div class="w-72 sm:w-80 shrink-0 bg-white border-2 border-[#CBD5E1] p-3 rounded-[2px] text-[#0B2545]">
+            <div class="relative aspect-[4/3] overflow-hidden rounded-[2px] border-2 border-[#0B2545] mb-3 bg-slate-100">
+              <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=600&q=80" alt="Resultado Mamoplastia de Aumento" class="w-full h-full object-cover">
+              <span class="absolute top-2 left-2 bg-[#00A86B] text-white font-extrabold text-[10px] uppercase px-2 py-0.5 rounded-[2px] border border-white">Mamoplastia de Aumento</span>
             </div>
-            <div class="pt-6 mt-6 border-t-2 border-[#E2E8F0] flex items-center gap-2 text-xs font-bold text-[#00A86B]">
-              <span>RQE & CFM nº 1.974/11</span>
-              <svg class="w-4 h-4 stroke-[2]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
-            </div>
+            <h4 class="font-bold text-sm text-[#0B2545]">Projeção Natural das Mamas</h4>
+            <p class="text-xs text-[#475569] mt-1">Prótese de silicone de alta performance com técnica de rápida recuperação.</p>
           </div>
 
           <!-- Card 3 -->
-          <div class="flat-card p-8 flex flex-col justify-between">
-            <div>
-              <div class="w-14 h-14 bg-[#FF6600] text-white flex items-center justify-center rounded-[2px] border-2 border-[#0B2545] mb-6">
-                <!-- SVG Heart Pulse / Home -->
-                <svg class="w-8 h-8 stroke-[2]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
-              </div>
-              <h3 class="text-xl font-bold text-[#0B2545] mb-3">Alta no Mesmo Dia com Conforto</h3>
-              <p class="text-[#475569] text-sm leading-relaxed font-medium">
-                Recuperação monitorada na Unidade de Recuperação Pós-Anestésica (URPA) com alta assistida para retorno tranquilo ao lar, reduzindo o estresse e os custos de internações prolongadas.
-              </p>
+          <div class="w-72 sm:w-80 shrink-0 bg-white border-2 border-[#CBD5E1] p-3 rounded-[2px] text-[#0B2545]">
+            <div class="relative aspect-[4/3] overflow-hidden rounded-[2px] border-2 border-[#0B2545] mb-3 bg-slate-100">
+              <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=600&q=80" alt="Resultado Abdominoplastia" class="w-full h-full object-cover">
+              <span class="absolute top-2 left-2 bg-[#FF6600] text-white font-extrabold text-[10px] uppercase px-2 py-0.5 rounded-[2px] border border-white">Abdominoplastia</span>
             </div>
-            <div class="pt-6 mt-6 border-t-2 border-[#E2E8F0] flex items-center gap-2 text-xs font-bold text-[#FF6600]">
-              <span>Despertar Suave & Monitorado</span>
-              <svg class="w-4 h-4 stroke-[2]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+            <h4 class="font-bold text-sm text-[#0B2545]">Correção de Diástase e Flacidez</h4>
+            <p class="text-xs text-[#475569] mt-1">Reestruturação da parede muscular e retirada de excesso de pele pós-gestação.</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="w-72 sm:w-80 shrink-0 bg-white border-2 border-[#CBD5E1] p-3 rounded-[2px] text-[#0B2545]">
+            <div class="relative aspect-[4/3] overflow-hidden rounded-[2px] border-2 border-[#0B2545] mb-3 bg-slate-100">
+              <img src="https://images.unsplash.com/photo-1512290900672-1f02302636e7?auto=format&fit=crop&w=600&q=80" alt="Resultado Mastopexia com Prótese" class="w-full h-full object-cover">
+              <span class="absolute top-2 left-2 bg-[#0066CC] text-white font-extrabold text-[10px] uppercase px-2 py-0.5 rounded-[2px] border border-white">Mastopexia</span>
             </div>
+            <h4 class="font-bold text-sm text-[#0B2545]">Lifting e Reposicionamento Mamário</h4>
+            <p class="text-xs text-[#475569] mt-1">Elevação das mamas caídas restaurando a firmeza e o colo definido.</p>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="w-72 sm:w-80 shrink-0 bg-white border-2 border-[#CBD5E1] p-3 rounded-[2px] text-[#0B2545]">
+            <div class="relative aspect-[4/3] overflow-hidden rounded-[2px] border-2 border-[#0B2545] mb-3 bg-slate-100">
+              <img src="https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&w=600&q=80" alt="Resultado Blefaroplastia e Harmonização" class="w-full h-full object-cover">
+              <span class="absolute top-2 left-2 bg-[#00A86B] text-white font-extrabold text-[10px] uppercase px-2 py-0.5 rounded-[2px] border border-white">Blefaroplastia</span>
+            </div>
+            <h4 class="font-bold text-sm text-[#0B2545]">Rejuvenescimento do Olhar</h4>
+            <p class="text-xs text-[#475569] mt-1">Eliminação de bolsas e excesso de pele palpebral com cicatrizes imperceptíveis.</p>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="w-72 sm:w-80 shrink-0 bg-white border-2 border-[#CBD5E1] p-3 rounded-[2px] text-[#0B2545]">
+            <div class="relative aspect-[4/3] overflow-hidden rounded-[2px] border-2 border-[#0B2545] mb-3 bg-slate-100">
+              <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=600&q=80" alt="Resultado Lipoenxertia Glútea" class="w-full h-full object-cover">
+              <span class="absolute top-2 left-2 bg-[#FF6600] text-white font-extrabold text-[10px] uppercase px-2 py-0.5 rounded-[2px] border border-white">Lipoenxertia Glútea</span>
+            </div>
+            <h4 class="font-bold text-sm text-[#0B2545]">Volume e Projeção Glútea</h4>
+            <p class="text-xs text-[#475569] mt-1">Preenchimento autólogo com gordura purificada do próprio paciente.</p>
+          </div>
+
+          <!-- CONJUNTO DUPLICADO PARA LOOP CONTÍNUO A -50% -->
+          <div class="w-72 sm:w-80 shrink-0 bg-white border-2 border-[#CBD5E1] p-3 rounded-[2px] text-[#0B2545]" aria-hidden="true">
+            <div class="relative aspect-[4/3] overflow-hidden rounded-[2px] border-2 border-[#0B2545] mb-3 bg-slate-100">
+              <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=600&q=80" alt="" class="w-full h-full object-cover">
+              <span class="absolute top-2 left-2 bg-[#0066CC] text-white font-extrabold text-[10px] uppercase px-2 py-0.5 rounded-[2px] border border-white">Lipoaspiração HD</span>
+            </div>
+            <h4 class="font-bold text-sm text-[#0B2545]">Contorno Abdominal & Cintura</h4>
+            <p class="text-xs text-[#475569] mt-1">Harmonização corporal com remoção estratégica de gordura e enxertia.</p>
+          </div>
+
+          <div class="w-72 sm:w-80 shrink-0 bg-white border-2 border-[#CBD5E1] p-3 rounded-[2px] text-[#0B2545]" aria-hidden="true">
+            <div class="relative aspect-[4/3] overflow-hidden rounded-[2px] border-2 border-[#0B2545] mb-3 bg-slate-100">
+              <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=600&q=80" alt="" class="w-full h-full object-cover">
+              <span class="absolute top-2 left-2 bg-[#00A86B] text-white font-extrabold text-[10px] uppercase px-2 py-0.5 rounded-[2px] border border-white">Mamoplastia de Aumento</span>
+            </div>
+            <h4 class="font-bold text-sm text-[#0B2545]">Projeção Natural das Mamas</h4>
+            <p class="text-xs text-[#475569] mt-1">Prótese de silicone de alta performance com técnica de rápida recuperação.</p>
+          </div>
+
+          <div class="w-72 sm:w-80 shrink-0 bg-white border-2 border-[#CBD5E1] p-3 rounded-[2px] text-[#0B2545]" aria-hidden="true">
+            <div class="relative aspect-[4/3] overflow-hidden rounded-[2px] border-2 border-[#0B2545] mb-3 bg-slate-100">
+              <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=600&q=80" alt="" class="w-full h-full object-cover">
+              <span class="absolute top-2 left-2 bg-[#FF6600] text-white font-extrabold text-[10px] uppercase px-2 py-0.5 rounded-[2px] border border-white">Abdominoplastia</span>
+            </div>
+            <h4 class="font-bold text-sm text-[#0B2545]">Correção de Diástase e Flacidez</h4>
+            <p class="text-xs text-[#475569] mt-1">Reestruturação da parede muscular e retirada de excesso de pele pós-gestação.</p>
+          </div>
+
+          <div class="w-72 sm:w-80 shrink-0 bg-white border-2 border-[#CBD5E1] p-3 rounded-[2px] text-[#0B2545]" aria-hidden="true">
+            <div class="relative aspect-[4/3] overflow-hidden rounded-[2px] border-2 border-[#0B2545] mb-3 bg-slate-100">
+              <img src="https://images.unsplash.com/photo-1512290900672-1f02302636e7?auto=format&fit=crop&w=600&q=80" alt="" class="w-full h-full object-cover">
+              <span class="absolute top-2 left-2 bg-[#0066CC] text-white font-extrabold text-[10px] uppercase px-2 py-0.5 rounded-[2px] border border-white">Mastopexia</span>
+            </div>
+            <h4 class="font-bold text-sm text-[#0B2545]">Lifting e Reposicionamento Mamário</h4>
+            <p class="text-xs text-[#475569] mt-1">Elevação das mamas caídas restaurando a firmeza e o colo definido.</p>
+          </div>
+
+          <div class="w-72 sm:w-80 shrink-0 bg-white border-2 border-[#CBD5E1] p-3 rounded-[2px] text-[#0B2545]" aria-hidden="true">
+            <div class="relative aspect-[4/3] overflow-hidden rounded-[2px] border-2 border-[#0B2545] mb-3 bg-slate-100">
+              <img src="https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&w=600&q=80" alt="" class="w-full h-full object-cover">
+              <span class="absolute top-2 left-2 bg-[#00A86B] text-white font-extrabold text-[10px] uppercase px-2 py-0.5 rounded-[2px] border border-white">Blefaroplastia</span>
+            </div>
+            <h4 class="font-bold text-sm text-[#0B2545]">Rejuvenescimento do Olhar</h4>
+            <p class="text-xs text-[#475569] mt-1">Eliminação de bolsas e excesso de pele palpebral com cicatrizes imperceptíveis.</p>
+          </div>
+
+          <div class="w-72 sm:w-80 shrink-0 bg-white border-2 border-[#CBD5E1] p-3 rounded-[2px] text-[#0B2545]" aria-hidden="true">
+            <div class="relative aspect-[4/3] overflow-hidden rounded-[2px] border-2 border-[#0B2545] mb-3 bg-slate-100">
+              <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=600&q=80" alt="" class="w-full h-full object-cover">
+              <span class="absolute top-2 left-2 bg-[#FF6600] text-white font-extrabold text-[10px] uppercase px-2 py-0.5 rounded-[2px] border border-white">Lipoenxertia Glútea</span>
+            </div>
+            <h4 class="font-bold text-sm text-[#0B2545]">Volume e Projeção Glútea</h4>
+            <p class="text-xs text-[#475569] mt-1">Preenchimento autólogo com gordura purificada do próprio paciente.</p>
           </div>
 
         </div>
+      </div>
 
+      <!-- Compliance Disclaimer CFM -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+        <div class="p-3 bg-[#081a31] border-2 border-slate-700 rounded-[2px]">
+          <p class="text-[11px] text-slate-300 font-medium leading-relaxed">
+            * Em conformidade com a Resolução CFM nº 2.336/2023 e CFM nº 1.974/11. Imagens com caráter ilustrativo de procedimentos médicos. Os resultados são estritamente individualizados e variam conforme a anatomia, biotipo e cicatrização de cada paciente.
+          </p>
+        </div>
       </div>
     </section>
 
     <!-- ========================================================================
-         4. PROCEDIMENTOS CORE EM DESTAQUE (Grid 4 Colunas Flat)
+         4. PROCEDIMENTOS CIRÚRGICOS (Abas Interativas Flat • Catálogo Completo)
          ======================================================================== -->
     <section class="py-16 lg:py-20 bg-white border-b-2 border-[#CBD5E1]" id="procedimentos-section">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
           <div>
-            <div class="flat-badge text-[#0066CC] border-[#0066CC] mb-2">Especialidades Core</div>
+            <div class="flat-badge text-[#0066CC] border-[#0066CC] mb-2">Corpo Clínico & Especialidades</div>
             <h2 class="text-3xl sm:text-4xl font-extrabold text-[#0B2545] tracking-tight">
-              Procedimentos Cirúrgicos Mais Procurados
+              Procedimentos Cirúrgicos
             </h2>
+            <p class="text-sm text-[#475569] mt-1 font-medium">
+              Conheça nosso catálogo cirúrgico completo e planeje seu procedimento com cirurgiões especialistas.
+            </p>
           </div>
           <a href="contato.html" class="btn-flat-outline px-6 py-2.5 text-sm shrink-0">
             <span>Dúvidas sobre Cirurgias? Fale Conosco</span>
           </a>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Abas Seletoras Flat -->
+        <div class="flex flex-wrap gap-2 mb-8 border-b-2 border-[#CBD5E1] pb-4">
+          <button 
+            type="button" 
+            data-tab-target="tab-corporais" 
+            class="tab-btn is-active px-5 py-2.5 text-sm font-bold uppercase tracking-wider rounded-[2px] border-2 border-[#0B2545] bg-[#0066CC] text-white transition-all cursor-pointer">
+            Procedimentos Corporais
+          </button>
+          <button 
+            type="button" 
+            data-tab-target="tab-mamarios" 
+            class="tab-btn px-5 py-2.5 text-sm font-bold uppercase tracking-wider rounded-[2px] border-2 border-[#CBD5E1] bg-[#F4F6F9] text-[#0B2545] hover:border-[#0B2545] transition-all cursor-pointer">
+            Procedimentos Mamários
+          </button>
+          <button 
+            type="button" 
+            data-tab-target="tab-faciais" 
+            class="tab-btn px-5 py-2.5 text-sm font-bold uppercase tracking-wider rounded-[2px] border-2 border-[#CBD5E1] bg-[#F4F6F9] text-[#0B2545] hover:border-[#0B2545] transition-all cursor-pointer">
+            Procedimentos Faciais
+          </button>
+          <button 
+            type="button" 
+            data-tab-target="tab-intimos" 
+            class="tab-btn px-5 py-2.5 text-sm font-bold uppercase tracking-wider rounded-[2px] border-2 border-[#CBD5E1] bg-[#F4F6F9] text-[#0B2545] hover:border-[#0B2545] transition-all cursor-pointer">
+            Procedimentos Íntimos
+          </button>
+          <button 
+            type="button" 
+            data-tab-target="tab-folicular" 
+            class="tab-btn px-5 py-2.5 text-sm font-bold uppercase tracking-wider rounded-[2px] border-2 border-[#CBD5E1] bg-[#F4F6F9] text-[#0B2545] hover:border-[#0B2545] transition-all cursor-pointer">
+            Transplante Folicular
+          </button>
+        </div>
+
+        <!-- Painéis de Conteúdo das Abas -->
+        <div id="tabs-content">
           
-          <!-- Procedimento 1 -->
-          <div class="flat-card p-6 flex flex-col justify-between group">
+          <!-- TAB 1: PROCEDIMENTOS CORPORAIS -->
+          <div data-tab-panel="tab-corporais" class="space-y-8">
+            
+            <!-- Subgrupo A: Gordura localizada e contorno corporal -->
             <div>
-              <div class="h-32 bg-[#F4F6F9] border-2 border-[#CBD5E1] flex flex-col items-center justify-center p-4 mb-5 rounded-[2px] text-center">
-                <span class="text-xs font-extrabold uppercase tracking-wider text-[#0066CC]">Contorno Corporal</span>
-                <span class="text-sm font-bold text-[#0B2545] mt-1">Lipo 360 & Glúteos</span>
+              <div class="flex items-center gap-2 mb-4">
+                <span class="w-2.5 h-2.5 bg-[#0066CC]"></span>
+                <h3 class="text-lg font-extrabold text-[#0B2545] uppercase tracking-wide">Gordura localizada e contorno corporal</h3>
               </div>
-              <h3 class="text-lg font-bold text-[#0B2545] mb-2 group-hover:text-[#0066CC] transition-colors">Lipoescultura</h3>
-              <p class="text-xs text-[#475569] leading-relaxed font-medium mb-4">
-                Remoção da gordura localizada resistente e enxertia estratégica para modelar cintura e glúteos com harmonia natural.
-              </p>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Lipoaspiração -->
+                <div class="flat-card p-6 flex flex-col justify-between">
+                  <div>
+                    <span class="text-[11px] font-extrabold uppercase text-[#0066CC] tracking-wider block mb-1">Contorno Corporal</span>
+                    <h4 class="text-xl font-bold text-[#0B2545] mb-2">Lipoaspiração</h4>
+                    <p class="text-xs text-[#475569] leading-relaxed font-medium mb-4">
+                      Remoção precisa de acúmulos de gordura resistente em flancos, abdômen e costas para uma silhueta harmoniosa.
+                    </p>
+                  </div>
+                  <a href="lipoescultura.html" class="btn-flat-primary w-full py-2.5 text-xs uppercase tracking-wider text-center">
+                    <span>Saber Mais</span>
+                  </a>
+                </div>
+                <!-- Lipoaspiração de Média Definição -->
+                <div class="flat-card p-6 flex flex-col justify-between">
+                  <div>
+                    <span class="text-[11px] font-extrabold uppercase text-[#0066CC] tracking-wider block mb-1">Definição Muscular</span>
+                    <h4 class="text-xl font-bold text-[#0B2545] mb-2">Lipoaspiração de Média Definição</h4>
+                    <p class="text-xs text-[#475569] leading-relaxed font-medium mb-4">
+                      Realce das linhas anatômicas e musculares com aspecto atlético elegante e resultado natural.
+                    </p>
+                  </div>
+                  <a href="contato.html" class="btn-flat-outline w-full py-2.5 text-xs uppercase tracking-wider text-center">
+                    <span>Falar com Especialista</span>
+                  </a>
+                </div>
+                <!-- Lipoaspiração com Argoplasma -->
+                <div class="flat-card p-6 flex flex-col justify-between">
+                  <div>
+                    <span class="text-[11px] font-extrabold uppercase text-[#00A86B] tracking-wider block mb-1">Tecnologia Avançada</span>
+                    <h4 class="text-xl font-bold text-[#0B2545] mb-2">Lipoaspiração com Argoplasma</h4>
+                    <p class="text-xs text-[#475569] leading-relaxed font-medium mb-4">
+                      Associação da retração dérmica por plasma de argônio para máximo estímulo de colágeno e redução da flacidez.
+                    </p>
+                  </div>
+                  <a href="contato.html" class="btn-flat-outline w-full py-2.5 text-xs uppercase tracking-wider text-center">
+                    <span>Falar com Especialista</span>
+                  </a>
+                </div>
+              </div>
             </div>
-            <a href="lipoescultura.html" class="btn-flat-blue w-full py-2.5 text-xs uppercase tracking-wider">
-              <span>Ver Detalhes</span>
-              <svg class="w-3.5 h-3.5 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-            </a>
+
+            <!-- Subgrupo B: Flacidez e excesso de pele -->
+            <div>
+              <div class="flex items-center gap-2 mb-4">
+                <span class="w-2.5 h-2.5 bg-[#FF6600]"></span>
+                <h3 class="text-lg font-extrabold text-[#0B2545] uppercase tracking-wide">Flacidez e excesso de pele</h3>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Abdominoplastia -->
+                <div class="flat-card p-6 flex flex-col justify-between">
+                  <div>
+                    <span class="text-[11px] font-extrabold uppercase text-[#FF6600] tracking-wider block mb-1">Parede Abdominal</span>
+                    <h4 class="text-lg font-bold text-[#0B2545] mb-2">Abdominoplastia</h4>
+                    <p class="text-xs text-[#475569] leading-relaxed font-medium mb-4">
+                      Remoção do excesso de pele inferior e reposicionamento dos músculos retos abdominais (plicatura).
+                    </p>
+                  </div>
+                  <a href="lipoabdominoplastia.html" class="btn-flat-primary w-full py-2.5 text-xs uppercase tracking-wider text-center">
+                    <span>Saber Mais</span>
+                  </a>
+                </div>
+                <!-- Miniabdominoplastia -->
+                <div class="flat-card p-6 flex flex-col justify-between">
+                  <div>
+                    <span class="text-[11px] font-extrabold uppercase text-[#FF6600] tracking-wider block mb-1">Mínima Incisão</span>
+                    <h4 class="text-lg font-bold text-[#0B2545] mb-2">Miniabdominoplastia</h4>
+                    <p class="text-xs text-[#475569] leading-relaxed font-medium mb-4">
+                      Indicada para pacientes com acúmulo de pele moderado restrito à região infraumbilical.
+                    </p>
+                  </div>
+                  <a href="contato.html" class="btn-flat-outline w-full py-2.5 text-xs uppercase tracking-wider text-center">
+                    <span>Falar com Especialista</span>
+                  </a>
+                </div>
+                <!-- Braquioplastia -->
+                <div class="flat-card p-6 flex flex-col justify-between">
+                  <div>
+                    <span class="text-[11px] font-extrabold uppercase text-[#0066CC] tracking-wider block mb-1">Braços Firmes</span>
+                    <h4 class="text-lg font-bold text-[#0B2545] mb-2">Lifting de Braços (Braquioplastia)</h4>
+                    <p class="text-xs text-[#475569] leading-relaxed font-medium mb-4">
+                      Retirada da pele pendular na região dos tríceps, restaurando o contorno dos membros superiores.
+                    </p>
+                  </div>
+                  <a href="contato.html" class="btn-flat-outline w-full py-2.5 text-xs uppercase tracking-wider text-center">
+                    <span>Falar com Especialista</span>
+                  </a>
+                </div>
+                <!-- Cruroplastia -->
+                <div class="flat-card p-6 flex flex-col justify-between">
+                  <div>
+                    <span class="text-[11px] font-extrabold uppercase text-[#0066CC] tracking-wider block mb-1">Coxas Esculpidas</span>
+                    <h4 class="text-lg font-bold text-[#0B2545] mb-2">Lifting de Coxas (Cruroplastia)</h4>
+                    <p class="text-xs text-[#475569] leading-relaxed font-medium mb-4">
+                      Eliminação do atrito e da flacidez na face interna das coxas com cicatrizes estrategicamente posicionadas.
+                    </p>
+                  </div>
+                  <a href="contato.html" class="btn-flat-outline w-full py-2.5 text-xs uppercase tracking-wider text-center">
+                    <span>Falar com Especialista</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Subgrupo C: Glúteos sem volume ou projeção -->
+            <div>
+              <div class="flex items-center gap-2 mb-4">
+                <span class="w-2.5 h-2.5 bg-[#00A86B]"></span>
+                <h3 class="text-lg font-extrabold text-[#0B2545] uppercase tracking-wide">Glúteos sem volume ou projeção</h3>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Lipoenxertia Glútea -->
+                <div class="flat-card p-6 flex flex-col justify-between">
+                  <div>
+                    <span class="text-[11px] font-extrabold uppercase text-[#00A86B] tracking-wider block mb-1">Preenchimento Natural</span>
+                    <h4 class="text-xl font-bold text-[#0B2545] mb-2">Lipoenxertia Glútea</h4>
+                    <p class="text-xs text-[#475569] leading-relaxed font-medium mb-4">
+                      Utilização da gordura purificada do próprio corpo para projetar, preencher depressões trocantéricas e arredondar os glúteos.
+                    </p>
+                  </div>
+                  <a href="contato.html" class="btn-flat-outline w-full py-2.5 text-xs uppercase tracking-wider text-center">
+                    <span>Falar com Especialista</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
           </div>
 
-          <!-- Procedimento 2 -->
-          <div class="flat-card p-6 flex flex-col justify-between group">
-            <div>
-              <div class="h-32 bg-[#F4F6F9] border-2 border-[#CBD5E1] flex flex-col items-center justify-center p-4 mb-5 rounded-[2px] text-center">
-                <span class="text-xs font-extrabold uppercase tracking-wider text-[#00A86B]">Cirurgia Mamária</span>
-                <span class="text-sm font-bold text-[#0B2545] mt-1">Prótese de Silicone</span>
+          <!-- TAB 2: PROCEDIMENTOS MAMÁRIOS -->
+          <div data-tab-panel="tab-mamarios" class="hidden space-y-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              
+              <!-- Mamoplastia de Aumento -->
+              <div class="flat-card p-6 flex flex-col justify-between">
+                <div>
+                  <span class="text-[11px] font-extrabold uppercase text-[#0066CC] tracking-wider block mb-1">Mamas Pequenas ou Sem Volume</span>
+                  <h4 class="text-lg font-bold text-[#0B2545] mb-2">Mamoplastia de Aumento</h4>
+                  <p class="text-xs text-[#475569] leading-relaxed font-medium mb-4">
+                    Inclusão de próteses de silicone de alta coesividade com simulação de volume e perfil ideal para o seu tórax.
+                  </p>
+                </div>
+                <a href="mastopexia-com-protese.html" class="btn-flat-primary w-full py-2.5 text-xs uppercase tracking-wider text-center">
+                  <span>Saber Mais</span>
+                </a>
               </div>
-              <h3 class="text-lg font-bold text-[#0B2545] mb-2 group-hover:text-[#0066CC] transition-colors">Mastopexia com Prótese</h3>
-              <p class="text-xs text-[#475569] leading-relaxed font-medium mb-4">
-                Lifting mamário para elevar os seios caídos e preenchimento do colo com próteses certificadas pela Anvisa.
-              </p>
+
+              <!-- Mamoplastia Redutora -->
+              <div class="flat-card p-6 flex flex-col justify-between">
+                <div>
+                  <span class="text-[11px] font-extrabold uppercase text-[#FF6600] tracking-wider block mb-1">Mamas Grandes / Desconforto</span>
+                  <h4 class="text-lg font-bold text-[#0B2545] mb-2">Mamoplastia Redutora</h4>
+                  <p class="text-xs text-[#475569] leading-relaxed font-medium mb-4">
+                    Alívio de peso, dores na coluna e desconforto postural através da remoção cirúrgica do excesso de tecido mamário.
+                  </p>
+                </div>
+                <a href="mastopexia-sem-protese.html" class="btn-flat-primary w-full py-2.5 text-xs uppercase tracking-wider text-center">
+                  <span>Saber Mais</span>
+                </a>
+              </div>
+
+              <!-- Mastopexia -->
+              <div class="flat-card p-6 flex flex-col justify-between">
+                <div>
+                  <span class="text-[11px] font-extrabold uppercase text-[#00A86B] tracking-wider block mb-1">Flacidez e Queda das Mamas</span>
+                  <h4 class="text-lg font-bold text-[#0B2545] mb-2">Mastopexia</h4>
+                  <p class="text-xs text-[#475569] leading-relaxed font-medium mb-4">
+                    Lifting mamário para elevar mamas caídas, reposicionar aréolas e devolver o colo firme (com ou sem prótese).
+                  </p>
+                </div>
+                <a href="mastopexia-com-protese.html" class="btn-flat-primary w-full py-2.5 text-xs uppercase tracking-wider text-center">
+                  <span>Saber Mais</span>
+                </a>
+              </div>
+
+              <!-- Ginecomastia -->
+              <div class="flat-card p-6 flex flex-col justify-between">
+                <div>
+                  <span class="text-[11px] font-extrabold uppercase text-[#0B2545] tracking-wider block mb-1">Mama Masculina Aumentada</span>
+                  <h4 class="text-lg font-bold text-[#0B2545] mb-2">Ginecomastia</h4>
+                  <p class="text-xs text-[#475569] leading-relaxed font-medium mb-4">
+                    Correção cirúrgica do desenvolvimento excessivo de glândula mamária ou acúmulo adiposo no tórax masculino.
+                  </p>
+                </div>
+                <a href="contato.html" class="btn-flat-outline w-full py-2.5 text-xs uppercase tracking-wider text-center">
+                  <span>Falar com Especialista</span>
+                </a>
+              </div>
+
             </div>
-            <a href="mastopexia-com-protese.html" class="btn-flat-blue w-full py-2.5 text-xs uppercase tracking-wider">
-              <span>Ver Detalhes</span>
-              <svg class="w-3.5 h-3.5 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-            </a>
           </div>
 
-          <!-- Procedimento 3 -->
-          <div class="flat-card p-6 flex flex-col justify-between group">
-            <div>
-              <div class="h-32 bg-[#F4F6F9] border-2 border-[#CBD5E1] flex flex-col items-center justify-center p-4 mb-5 rounded-[2px] text-center">
-                <span class="text-xs font-extrabold uppercase tracking-wider text-[#FF6600]">Abdômen & Diástase</span>
-                <span class="text-sm font-bold text-[#0B2545] mt-1">Cintura Esculpida</span>
+          <!-- TAB 3: PROCEDIMENTOS FACIAIS -->
+          <div data-tab-panel="tab-faciais" class="hidden space-y-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              
+              <!-- Rinoplastia -->
+              <div class="flat-card p-6 flex flex-col justify-between">
+                <div>
+                  <span class="text-[11px] font-extrabold uppercase text-[#0066CC] tracking-wider block mb-1">Estética e Função</span>
+                  <h4 class="text-lg font-bold text-[#0B2545] mb-2">Rinoplastia</h4>
+                  <p class="text-xs text-[#475569] leading-relaxed font-medium mb-4">
+                    Estruturação e refinamento da pirâmide e dorso nasal, preservando a harmonia com traços étnicos e a respiração.
+                  </p>
+                </div>
+                <a href="contato.html" class="btn-flat-outline w-full py-2.5 text-xs uppercase tracking-wider text-center">
+                  <span>Falar com Especialista</span>
+                </a>
               </div>
-              <h3 class="text-lg font-bold text-[#0B2545] mb-2 group-hover:text-[#0066CC] transition-colors">Lipoabdominoplastia</h3>
-              <p class="text-xs text-[#475569] leading-relaxed font-medium mb-4">
-                Associação cirúrgica para retirar o avental de pele flácida, amarrar a diástase muscular e esculpir a cintura.
-              </p>
+
+              <!-- Blefaroplastia -->
+              <div class="flat-card p-6 flex flex-col justify-between">
+                <div>
+                  <span class="text-[11px] font-extrabold uppercase text-[#00A86B] tracking-wider block mb-1">Olhar Rejuvenescido</span>
+                  <h4 class="text-lg font-bold text-[#0B2545] mb-2">Blefaroplastia</h4>
+                  <p class="text-xs text-[#475569] leading-relaxed font-medium mb-4">
+                    Cirurgia das pálpebras superiores e inferiores com retirada de bolsas de gordura e pele flácida.
+                  </p>
+                </div>
+                <a href="contato.html" class="btn-flat-outline w-full py-2.5 text-xs uppercase tracking-wider text-center">
+                  <span>Falar com Especialista</span>
+                </a>
+              </div>
+
+              <!-- Lifting Facial -->
+              <div class="flat-card p-6 flex flex-col justify-between">
+                <div>
+                  <span class="text-[11px] font-extrabold uppercase text-[#FF6600] tracking-wider block mb-1">Reposicionamento de SMAS</span>
+                  <h4 class="text-lg font-bold text-[#0B2545] mb-2">Lifting Facial</h4>
+                  <p class="text-xs text-[#475569] leading-relaxed font-medium mb-4">
+                    Suspensão das estruturas profundas da face e pescoço, amenizando vincos e restaurando o ângulo mandibular.
+                  </p>
+                </div>
+                <a href="contato.html" class="btn-flat-outline w-full py-2.5 text-xs uppercase tracking-wider text-center">
+                  <span>Falar com Especialista</span>
+                </a>
+              </div>
+
+              <!-- Otoplastia -->
+              <div class="flat-card p-6 flex flex-col justify-between">
+                <div>
+                  <span class="text-[11px] font-extrabold uppercase text-[#0066CC] tracking-wider block mb-1">Harmonia Auricular</span>
+                  <h4 class="text-lg font-bold text-[#0B2545] mb-2">Otoplastia</h4>
+                  <p class="text-xs text-[#475569] leading-relaxed font-medium mb-4">
+                    Correção de orelhas de abano ou alterações no formato da cartilagem com cicatriz oculta atrás da orelha.
+                  </p>
+                </div>
+                <a href="contato.html" class="btn-flat-outline w-full py-2.5 text-xs uppercase tracking-wider text-center">
+                  <span>Falar com Especialista</span>
+                </a>
+              </div>
+
+              <!-- Bichectomia -->
+              <div class="flat-card p-6 flex flex-col justify-between">
+                <div>
+                  <span class="text-[11px] font-extrabold uppercase text-[#0B2545] tracking-wider block mb-1">Afilamento Facial</span>
+                  <h4 class="text-lg font-bold text-[#0B2545] mb-2">Bichectomia</h4>
+                  <p class="text-xs text-[#475569] leading-relaxed font-medium mb-4">
+                    Remoção controlada das bolsas de Bichat para destacar as maçãs do rosto e afinar o perfil facial.
+                  </p>
+                </div>
+                <a href="contato.html" class="btn-flat-outline w-full py-2.5 text-xs uppercase tracking-wider text-center">
+                  <span>Falar com Especialista</span>
+                </a>
+              </div>
+
             </div>
-            <a href="lipoabdominoplastia.html" class="btn-flat-blue w-full py-2.5 text-xs uppercase tracking-wider">
-              <span>Ver Detalhes</span>
-              <svg class="w-3.5 h-3.5 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-            </a>
           </div>
 
-          <!-- Procedimento 4 -->
-          <div class="flat-card p-6 flex flex-col justify-between group">
-            <div>
-              <div class="h-32 bg-[#F4F6F9] border-2 border-[#CBD5E1] flex flex-col items-center justify-center p-4 mb-5 rounded-[2px] text-center">
-                <span class="text-xs font-extrabold uppercase tracking-wider text-[#0B2545]">Lifting Natural</span>
-                <span class="text-sm font-bold text-[#0B2545] mt-1">Sem Implantes</span>
+          <!-- TAB 4: PROCEDIMENTOS ÍNTIMOS -->
+          <div data-tab-panel="tab-intimos" class="hidden space-y-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              
+              <!-- Ninfoplastia -->
+              <div class="flat-card p-6 flex flex-col justify-between">
+                <div>
+                  <span class="text-[11px] font-extrabold uppercase text-[#0066CC] tracking-wider block mb-1">Estética e Conforto</span>
+                  <h4 class="text-lg font-bold text-[#0B2545] mb-2">Ninfoplastia</h4>
+                  <p class="text-xs text-[#475569] leading-relaxed font-medium mb-4">
+                    Correção da hipertrofia dos pequenos lábios vaginais para eliminar desconfortos com roupas justas e atividade física.
+                  </p>
+                </div>
+                <a href="contato.html" class="btn-flat-outline w-full py-2.5 text-xs uppercase tracking-wider text-center">
+                  <span>Falar com Especialista</span>
+                </a>
               </div>
-              <h3 class="text-lg font-bold text-[#0B2545] mb-2 group-hover:text-[#0066CC] transition-colors">Mastopexia sem Prótese</h3>
-              <p class="text-xs text-[#475569] leading-relaxed font-medium mb-4">
-                Elevação e remodelamento dos seios utilizando o próprio tecido mamário da paciente como retalho anatômico sustentador.
-              </p>
+
+              <!-- Redução do Monte de Vênus -->
+              <div class="flat-card p-6 flex flex-col justify-between">
+                <div>
+                  <span class="text-[11px] font-extrabold uppercase text-[#FF6600] tracking-wider block mb-1">Região Púbica</span>
+                  <h4 class="text-lg font-bold text-[#0B2545] mb-2">Redução do Monte de Vênus</h4>
+                  <p class="text-xs text-[#475569] leading-relaxed font-medium mb-4">
+                    Lipoaspiração ou ressecção de excesso de pele na região pubiana para atenuar o volume visível sob roupas de banho.
+                  </p>
+                </div>
+                <a href="contato.html" class="btn-flat-outline w-full py-2.5 text-xs uppercase tracking-wider text-center">
+                  <span>Falar com Especialista</span>
+                </a>
+              </div>
+
+              <!-- Flacidez dos Grandes Lábios -->
+              <div class="flat-card p-6 flex flex-col justify-between">
+                <div>
+                  <span class="text-[11px] font-extrabold uppercase text-[#00A86B] tracking-wider block mb-1">Tonificação Íntima</span>
+                  <h4 class="text-lg font-bold text-[#0B2545] mb-2">Tratamento da Flacidez dos Grandes Lábios</h4>
+                  <p class="text-xs text-[#475569] leading-relaxed font-medium mb-4">
+                    Procedimento de lifting ou volumização com enxerto autólogo para restabelecer o turgor e a simetria genital.
+                  </p>
+                </div>
+                <a href="contato.html" class="btn-flat-outline w-full py-2.5 text-xs uppercase tracking-wider text-center">
+                  <span>Falar com Especialista</span>
+                </a>
+              </div>
+
             </div>
-            <a href="mastopexia-sem-protese.html" class="btn-flat-blue w-full py-2.5 text-xs uppercase tracking-wider">
-              <span>Ver Detalhes</span>
-              <svg class="w-3.5 h-3.5 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-            </a>
+          </div>
+
+          <!-- TAB 5: TRANSPLANTE FOLICULAR -->
+          <div data-tab-panel="tab-folicular" class="hidden space-y-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              
+              <!-- Transplante Capilar (Cabelo) -->
+              <div class="flat-card p-6 flex flex-col justify-between">
+                <div>
+                  <span class="text-[11px] font-extrabold uppercase text-[#0066CC] tracking-wider block mb-1">Queda de Cabelo ou Falhas</span>
+                  <h4 class="text-xl font-bold text-[#0B2545] mb-2">Transplante Capilar (Cabelo)</h4>
+                  <p class="text-xs text-[#475569] leading-relaxed font-medium mb-4">
+                    Técnica FUE fio a fio sem cicatriz linear para restaurar entradas, coroa e densidade capilar com ângulo de crescimento natural.
+                  </p>
+                </div>
+                <a href="contato.html" class="btn-flat-outline w-full py-2.5 text-xs uppercase tracking-wider text-center">
+                  <span>Falar com Especialista</span>
+                </a>
+              </div>
+
+              <!-- Transplante de Sobrancelhas -->
+              <div class="flat-card p-6 flex flex-col justify-between">
+                <div>
+                  <span class="text-[11px] font-extrabold uppercase text-[#00A86B] tracking-wider block mb-1">Falhas ou Ausência de Fios</span>
+                  <h4 class="text-xl font-bold text-[#0B2545] mb-2">Transplante de Sobrancelhas</h4>
+                  <p class="text-xs text-[#475569] leading-relaxed font-medium mb-4">
+                    Implantação de unidades foliculares ultrafinas para preenchimento definitivo e reconstrução do arco da sobrancelha.
+                  </p>
+                </div>
+                <a href="contato.html" class="btn-flat-outline w-full py-2.5 text-xs uppercase tracking-wider text-center">
+                  <span>Falar com Especialista</span>
+                </a>
+              </div>
+
+            </div>
           </div>
 
         </div>
@@ -425,152 +803,137 @@
     </section>
 
     <!-- ========================================================================
-         5. PRICING & CONDIÇÕES CIRÚRGICAS (3 Tiers, Destaque no Central)
+         5. CIRURGIA PROGRAMADA (Layout Split com Imagem Esquerda & Card de Destaque)
          ======================================================================== -->
-    <section class="py-16 lg:py-24 bg-[#F4F6F9] border-b-2 border-[#CBD5E1]" id="planos-section">
+    <section class="py-16 lg:py-24 bg-[#F4F6F9] border-b-2 border-[#CBD5E1]" id="cirurgia-programada">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="text-center max-w-3xl mx-auto mb-16">
-          <div class="flat-badge text-[#FF6600] border-[#FF6600] mb-3">Planejamento & Acessibilidade</div>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#0B2545] tracking-tight">
-            Condições Transparentes para Cada Perfil de Paciente
-          </h2>
-          <p class="text-base text-[#475569] font-medium mt-3">
-            A cirurgia dos seus sonhos não precisa ficar apenas no papel. Escolha o formato de planejamento que melhor se adequa ao seu orçamento.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           
-          <!-- Tier 1: Avaliação Especializada -->
-          <div class="flat-card p-8 flex flex-col justify-between">
-            <div>
-              <div class="text-xs font-extrabold text-[#0066CC] uppercase tracking-wider mb-2">Primeiro Passo</div>
-              <h3 class="text-2xl font-extrabold text-[#0B2545] mb-2">Consulta de Avaliação</h3>
-              <p class="text-sm text-[#475569] font-medium mb-6">Diagnóstico clínico individualizado e desenho do plano cirúrgico.</p>
-              
-              <div class="p-4 bg-[#F4F6F9] border-2 border-[#CBD5E1] rounded-[2px] mb-6">
-                <span class="text-xs font-bold text-[#475569] block">Investimento Inicial</span>
-                <span class="text-3xl font-extrabold text-[#0B2545]">Sob Consulta</span>
-                <span class="text-xs text-[#00A86B] font-bold flex items-center gap-1 mt-1">
-                  <svg class="w-3.5 h-3.5 text-[#00A86B] stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                  <span>Descontada do pacote cirúrgico</span>
-                </span>
+          <!-- Coluna Esquerda: Foto Cobrindo o Fundo da Seção -->
+          <div class="lg:col-span-5 h-full">
+            <div class="sticky top-28 bg-white border-2 border-[#0B2545] p-3 rounded-[2px]">
+              <div class="relative overflow-hidden border-2 border-[#0B2545] rounded-[2px] aspect-[3/4] bg-slate-100">
+                <img 
+                  src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=900&q=80" 
+                  alt="Planejamento de Cirurgia Hospital Oeste Day" 
+                  class="w-full h-full object-cover"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0B2545]/90 via-[#0B2545]/20 to-transparent"></div>
+                <div class="absolute bottom-4 left-4 right-4 text-white">
+                  <span class="text-[10px] font-extrabold uppercase tracking-widest text-[#FF6600] bg-white/10 px-2 py-0.5 rounded-[2px] border border-white/20">
+                    Facilidade & Previsibilidade
+                  </span>
+                  <h4 class="text-lg font-bold text-white mt-1">Sua cirurgia com tranquilidade financeira</h4>
+                </div>
               </div>
-
-              <ul class="space-y-3 text-sm text-[#0B2545] font-semibold mb-8">
-                <li class="flex items-center gap-2">
-                  <svg class="w-4 h-4 text-[#00A86B] stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                  <span>Exame físico detalhado das mamas e contorno</span>
-                </li>
-                <li class="flex items-center gap-2">
-                  <svg class="w-4 h-4 text-[#00A86B] stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                  <span>Simulação e alinhamento de expectativas</span>
-                </li>
-                <li class="flex items-center gap-2">
-                  <svg class="w-4 h-4 text-[#00A86B] stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                  <span>Solicitação completa de exames de risco</span>
-                </li>
-                <li class="flex items-center gap-2">
-                  <svg class="w-4 h-4 text-[#00A86B] stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                  <span>Orçamento hospitalar transparente</span>
-                </li>
-              </ul>
             </div>
-
-            <a href="contato.html" class="btn-flat-outline w-full py-3 text-sm uppercase tracking-wider">
-              <span>Agendar Minha Consulta</span>
-            </a>
           </div>
 
-          <!-- Tier 2: Destaque Central (Cirurgia Programada) -->
-          <div class="flat-card-featured p-8 flex flex-col justify-between">
-            <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#FF6600] text-white px-4 py-1 text-xs font-extrabold uppercase tracking-wider rounded-[2px] border-2 border-[#0B2545]">
-              Mais Escolhido • Sem Juros
+          <!-- Coluna Direita: Todo o Conteúdo + Card de Destaque Visual Escuro -->
+          <div class="lg:col-span-7">
+            
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-[#0B2545] tracking-tight leading-tight mb-6">
+              Sua cirurgia, no seu tempo e com parcelas que cabem no seu planejamento.
+            </h2>
+
+            <div class="space-y-4 text-[#475569] text-base leading-relaxed font-medium mb-8">
+              <p>
+                Com a <strong class="text-[#0B2545]">Cirurgia Programada do Hospital Oeste Day</strong>, você pode se organizar financeiramente para realizar sua cirurgia com mais tranquilidade, flexibilidade e segurança.
+              </p>
+              <p>
+                Tudo é planejado diretamente com o hospital, com condições facilitadas e liberdade para escolher a melhor forma de pagamento.
+              </p>
             </div>
 
-            <div>
-              <div class="text-xs font-extrabold text-[#FF6600] uppercase tracking-wider mb-2 mt-2">Planejamento Antecipado</div>
-              <h3 class="text-2xl font-extrabold text-[#0B2545] mb-2">Cirurgia Programada</h3>
-              <p class="text-sm text-[#475569] font-medium mb-6">Programe sua cirurgia em parcelas mensais e opere 100% quitada.</p>
-              
-              <div class="p-4 bg-[#FFF7ED] border-2 border-[#FF6600] rounded-[2px] mb-6">
-                <span class="text-xs font-bold text-[#FF6600] block">Mensalidades Programadas</span>
-                <span class="text-3xl font-extrabold text-[#0B2545]">Parcelas Sob Medida</span>
-                <span class="text-xs text-[#00A86B] font-bold flex items-center gap-1 mt-1">
-                  <svg class="w-3.5 h-3.5 text-[#00A86B] stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                  <span>Sem juros bancários até a data da cirurgia</span>
-                </span>
-              </div>
-
-              <ul class="space-y-3 text-sm text-[#0B2545] font-semibold mb-8">
-                <li class="flex items-center gap-2">
-                  <svg class="w-4 h-4 text-[#00A86B] stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                  <span>Reserva garantida do Centro Cirúrgico Oeste Day</span>
+            <!-- Vantagens em Lista Flat -->
+            <div class="mb-8">
+              <h3 class="text-lg font-bold text-[#0B2545] mb-4">Conheça as vantagens:</h3>
+              <ul class="space-y-3.5 text-sm sm:text-base text-[#334155]">
+                <li class="flex items-start gap-3">
+                  <div class="w-5 h-5 rounded-[2px] bg-[#0066CC] text-white flex items-center justify-center shrink-0 mt-0.5 border border-[#0B2545]">
+                    <svg class="w-3.5 h-3.5 stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  </div>
+                  <div><strong class="text-[#0B2545]">Entrada facilitada:</strong> parcele em até 12x sem juros no cartão de crédito.</div>
                 </li>
-                <li class="flex items-center gap-2">
-                  <svg class="w-4 h-4 text-[#00A86B] stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                  <span>Equipe de Cirurgia Plástica SBCP + Anestesista</span>
+                <li class="flex items-start gap-3">
+                  <div class="w-5 h-5 rounded-[2px] bg-[#0066CC] text-white flex items-center justify-center shrink-0 mt-0.5 border border-[#0B2545]">
+                    <svg class="w-3.5 h-3.5 stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  </div>
+                  <div><strong class="text-[#0B2545]">Parcelas flexíveis:</strong> pague o restante via PIX, com opções semanais, quinzenais ou mensais.</div>
                 </li>
-                <li class="flex items-center gap-2">
-                  <svg class="w-4 h-4 text-[#00A86B] stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                  <span>Leito de recuperação URPA e enfermagem dedicada</span>
+                <li class="flex items-start gap-3">
+                  <div class="w-5 h-5 rounded-[2px] bg-[#0066CC] text-white flex items-center justify-center shrink-0 mt-0.5 border border-[#0B2545]">
+                    <svg class="w-3.5 h-3.5 stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  </div>
+                  <div><strong class="text-[#0B2545]">Sem consulta ao SPC/Serasa:</strong> mais facilidade para iniciar seu planejamento.</div>
                 </li>
-                <li class="flex items-center gap-2">
-                  <svg class="w-4 h-4 text-[#00A86B] stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                  <span>Pacote completo fechado sem custos surpresa</span>
+                <li class="flex items-start gap-3">
+                  <div class="w-5 h-5 rounded-[2px] bg-[#0066CC] text-white flex items-center justify-center shrink-0 mt-0.5 border border-[#0B2545]">
+                    <svg class="w-3.5 h-3.5 stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  </div>
+                  <div><strong class="text-[#0B2545]">Prazo de até 12 meses:</strong> com possibilidade de renovação.</div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <div class="w-5 h-5 rounded-[2px] bg-[#0066CC] text-white flex items-center justify-center shrink-0 mt-0.5 border border-[#0B2545]">
+                    <svg class="w-3.5 h-3.5 stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  </div>
+                  <div><strong class="text-[#0B2545]">Antecipação livre:</strong> quite o valor restante quando desejar.</div>
                 </li>
               </ul>
             </div>
 
-            <a href="contato.html" class="btn-flat-primary w-full py-4 text-base uppercase tracking-wider">
-              <span>Simular Meu Planejamento</span>
-            </a>
-          </div>
-
-          <!-- Tier 3: Day Hospital Imediato (Cartão / À Vista) -->
-          <div class="flat-card p-8 flex flex-col justify-between">
-            <div>
-              <div class="text-xs font-extrabold text-[#00A86B] uppercase tracking-wider mb-2">Agendamento Imediato</div>
-              <h3 class="text-2xl font-extrabold text-[#0B2545] mb-2">Day Hospital Completo</h3>
-              <p class="text-sm text-[#475569] font-medium mb-6">Data cirúrgica próxima com facilidade no cartão de crédito.</p>
-              
-              <div class="p-4 bg-[#F4F6F9] border-2 border-[#CBD5E1] rounded-[2px] mb-6">
-                <span class="text-xs font-bold text-[#475569] block">Condição Facilitada</span>
-                <span class="text-3xl font-extrabold text-[#0B2545]">Até 18x no Cartão</span>
-                <span class="text-xs text-[#0066CC] font-bold flex items-center gap-1 mt-1">
-                  <svg class="w-3.5 h-3.5 text-[#0066CC] stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                  <span>Opção de entrada + parcelamento</span>
-                </span>
-              </div>
-
-              <ul class="space-y-3 text-sm text-[#0B2545] font-semibold mb-8">
-                <li class="flex items-center gap-2">
-                  <svg class="w-4 h-4 text-[#00A86B] stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                  <span>Agendamento ágil de data no centro cirúrgico</span>
-                </li>
-                <li class="flex items-center gap-2">
-                  <svg class="w-4 h-4 text-[#00A86B] stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                  <span>Divisão em múltiplos cartões de crédito</span>
-                </li>
-                <li class="flex items-center gap-2">
-                  <svg class="w-4 h-4 text-[#00A86B] stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                  <span>Materiais e órteses cirúrgicas de padrão Anvisa</span>
-                </li>
-                <li class="flex items-center gap-2">
-                  <svg class="w-4 h-4 text-[#00A86B] stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                  <span>Assistência pós-anestésica contínua</span>
-                </li>
-              </ul>
+            <div class="space-y-2 text-[#475569] text-sm sm:text-base leading-relaxed font-medium mb-8">
+              <p class="font-bold text-[#0B2545]">Planeje hoje a cirurgia que você deseja realizar.</p>
+              <p>Entre em contato com nossa equipe, conheça as condições da Cirurgia Programada e descubra como dar o primeiro passo.</p>
             </div>
 
-            <a href="contato.html" class="btn-flat-outline w-full py-3 text-sm uppercase tracking-wider">
-              <span>Consultar Datas Disponíveis</span>
-            </a>
+            <!-- Sugestão de Destaque Visual Fiel ao Mockup (Dark Card Flat) -->
+            <div class="bg-[#0b0f19] border-2 border-[#0B2545] p-6 sm:p-8 rounded-[2px] text-white">
+              
+              <div class="flex items-center gap-2 text-slate-400 font-extrabold text-[11px] uppercase tracking-wider mb-3">
+                <svg class="w-4 h-4 stroke-[2] text-[#FF6600]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                </svg>
+                <span>PROGRAMA CIRURGIA PROGRAMADA</span>
+              </div>
+
+              <h3 class="text-xl sm:text-2xl font-extrabold text-white mb-2">
+                Seu próximo passo começa com um bom planejamento.
+              </h3>
+              
+              <p class="text-xs sm:text-sm text-slate-400 font-medium mb-6">
+                Mais flexibilidade para organizar o pagamento da sua cirurgia, diretamente com o Grupo Capobianco.
+              </p>
+
+              <!-- Grid 2x2 do Mockup -->
+              <div class="grid grid-cols-2 gap-3 mb-5">
+                <div class="bg-[#1e2638] border-2 border-slate-700 p-4 rounded-[2px]">
+                  <div class="text-xl sm:text-2xl font-extrabold text-white">12x</div>
+                  <div class="text-[11px] text-slate-300 font-semibold mt-1">Sem juros na entrada</div>
+                </div>
+                <div class="bg-[#1e2638] border-2 border-slate-700 p-4 rounded-[2px]">
+                  <div class="text-xl sm:text-2xl font-extrabold text-white">PIX</div>
+                  <div class="text-[11px] text-slate-300 font-semibold mt-1">Parcelas flexíveis</div>
+                </div>
+                <div class="bg-[#1e2638] border-2 border-slate-700 p-4 rounded-[2px]">
+                  <div class="text-xl sm:text-2xl font-extrabold text-white">12 meses</div>
+                  <div class="text-[11px] text-slate-300 font-semibold mt-1">Prazo renovável</div>
+                </div>
+                <div class="bg-[#1e2638] border-2 border-slate-700 p-4 rounded-[2px]">
+                  <div class="text-xl sm:text-2xl font-extrabold text-white">Sem consulta</div>
+                  <div class="text-[11px] text-slate-300 font-semibold mt-1">Ao SPC/Serasa</div>
+                </div>
+              </div>
+
+              <!-- CTA Full Width do Mockup -->
+              <a href="contato.html" class="w-full block py-3.5 px-6 text-center text-sm font-extrabold uppercase tracking-wider text-white bg-[#161c28] hover:bg-[#FF6600] border-2 border-slate-600 hover:border-white transition-colors rounded-[2px]">
+                Quero planejar minha cirurgia
+              </a>
+            </div>
+
           </div>
 
         </div>
-
       </div>
     </section>
 

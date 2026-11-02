@@ -285,3 +285,23 @@ body {
   line-height: 1.6;
   color: var(--color-text-muted);
 }
+
+/* Infinite Carousel Loop (60fps, Pause on Hover, Flat 2D) */
+@keyframes infinite-loop-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.animate-infinite-loop {
+  display: flex;
+  width: max-content;
+  animation: infinite-loop-scroll 35s linear infinite;
+  will-change: transform;
+}
+.animate-infinite-loop:hover {
+  animation-play-state: paused;
+}
+
